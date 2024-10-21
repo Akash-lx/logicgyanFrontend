@@ -1,42 +1,18 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Paper, Typography } from "@mui/material";
 import React from "react";
 import { colors } from "../config/colorPalette";
 import Grid from "@mui/material/Grid2";
 
 const IntricateYourApps = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3, // Default slides shown
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024, // screen width < 1024px
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600, // screen width < 600px
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
   return (
-    <Box bgcolor="#E5FFF9" py={5}>
+    <Box bgcolor="#E5FFF9" py={10}>
       <Box>
         <Typography
           variant="h3"
           fontWeight={600}
           lineHeight={1.2}
           textAlign="center"
+          mb={5}
         >
           Easy to Intricate <br />
           <Typography component="span" variant="h3" fontWeight={600}>
@@ -44,10 +20,139 @@ const IntricateYourApps = () => {
           </Typography>
         </Typography>
       </Box>
-      <Box>
-        <Grid container>
+      <Box px={8}>
+        <Grid container spacing={2}>
           <Grid size={2}>
-            <Box>Hello</Box>
+            <Box
+              bgcolor="white"
+              p={4}
+              borderRadius={3}
+              component={Paper}
+              elevation={5}
+              textAlign="center"
+              sx={{
+                transition: "transform 0.5s ease", // Smooth transition for the levitation
+                "&:hover": {
+                  backgroundColor: "#ccaa00",
+                  boxShadow: " 0px 0px 18px 19px rgba(204,170,0,0.17)",
+                  transform: "translateY(-2px)", // Move the card up by 4px on hover
+                },
+              }}
+            >
+              <Typography variant="body1" fontWeight={500}>
+                ThemeForest
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid size={2}>
+            <Box
+              bgcolor="white"
+              p={4}
+              borderRadius={3}
+              component={Paper}
+              elevation={5}
+              textAlign="center"
+              sx={{
+                transition: "transform 0.5s ease", // Smooth transition for the levitation
+                "&:hover": {
+                  backgroundColor: "#ccaa00",
+                  boxShadow: " 0px 0px 18px 19px rgba(204,170,0,0.17)",
+                  transform: "translateY(-2px)", // Move the card up by 4px on hover
+                },
+              }}
+            >
+              <Typography variant="body1" fontWeight={500}>
+                ThemeForest
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid size={2}>
+            <Box
+              bgcolor="white"
+              p={4}
+              borderRadius={3}
+              component={Paper}
+              elevation={5}
+              textAlign="center"
+              sx={{
+                transition: "transform 0.5s ease", // Smooth transition for the levitation
+                "&:hover": {
+                  backgroundColor: "#ccaa00",
+                  boxShadow: " 0px 0px 18px 19px rgba(204,170,0,0.17)",
+                  transform: "translateY(-2px)", // Move the card up by 4px on hover
+                },
+              }}
+            >
+              <Typography variant="body1" fontWeight={500}>
+                ThemeForest
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid size={2}>
+            <Box
+              bgcolor="white"
+              p={4}
+              borderRadius={3}
+              component={Paper}
+              elevation={5}
+              textAlign="center"
+              sx={{
+                transition: "transform 0.5s ease", // Smooth transition for the levitation
+                "&:hover": {
+                  backgroundColor: "#ccaa00",
+                  boxShadow: " 0px 0px 18px 19px rgba(204,170,0,0.17)",
+                  transform: "translateY(-2px)", // Move the card up by 4px on hover
+                },
+              }}
+            >
+              <Typography variant="body1" fontWeight={500}>
+                ThemeForest
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid size={2}>
+            <Box
+              bgcolor="white"
+              p={4}
+              borderRadius={3}
+              component={Paper}
+              elevation={5}
+              textAlign="center"
+              sx={{
+                transition: "transform 0.5s ease", // Smooth transition for the levitation
+                "&:hover": {
+                  backgroundColor: "#ccaa00",
+                  boxShadow: " 0px 0px 18px 19px rgba(204,170,0,0.17)",
+                  transform: "translateY(-2px)", // Move the card up by 4px on hover
+                },
+              }}
+            >
+              <Typography variant="body1" fontWeight={500}>
+                ThemeForest
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid size={2}>
+            <Box
+              bgcolor="white"
+              p={4}
+              borderRadius={3}
+              component={Paper}
+              elevation={5}
+              textAlign="center"
+              sx={{
+                transition: "transform 0.5s ease", // Smooth transition for the levitation
+                "&:hover": {
+                  backgroundColor: "#ccaa00",
+                  boxShadow: " 0px 0px 18px 19px rgba(204,170,0,0.17)",
+                  transform: "translateY(-2px)", // Move the card up by 4px on hover
+                },
+              }}
+            >
+              <Typography variant="body1" fontWeight={500}>
+                ThemeForest
+              </Typography>
+            </Box>
           </Grid>
         </Grid>
       </Box>

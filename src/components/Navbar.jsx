@@ -90,7 +90,7 @@ const HeadNavbar = () => {
                 cursor: "pointer",
               }}
               onClick={() => {
-                handleNavigate();
+                handleNavigate("feature");
               }}
             >
               Features
@@ -103,14 +103,14 @@ const HeadNavbar = () => {
                 cursor: "pointer",
               }}
               onClick={() => {
-                handleNavigate();
+                handleNavigate("blog");
               }}
             >
               Blogs
             </Typography>
           </Box>
           <Box>
-            <PrimaryButton title="Contact Us" />
+            <PrimaryButton title="Contact Us" btnFunction={handleNavigate} />
           </Box>
         </Toolbar>
       </Box>

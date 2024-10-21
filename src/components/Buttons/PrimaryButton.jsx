@@ -2,9 +2,15 @@ import { Button } from "@mui/material";
 import React from "react";
 import { colors } from "../../config/colorPalette";
 
-const PrimaryButton = ({ title }) => {
+const PrimaryButton = ({ title, btnFunction }) => {
   return (
-    <Button variant="contained" sx={{ backgroundColor: colors.secondry.main }}>
+    <Button
+      variant="contained"
+      sx={{ backgroundColor: colors.secondry.main }}
+      onClick={() => {
+        btnFunction("contactUs");
+      }}
+    >
       {title}
     </Button>
   );

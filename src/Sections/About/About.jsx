@@ -5,6 +5,7 @@ import LatestWork from "./LatestWork";
 import { Box, Typography } from "@mui/material";
 import ClientReviewCarousel from "../../components/ClientReviewCarousel";
 import PictureCarousel from "../../components/PictureCarousel";
+import FreeTrailSection from "../../components/FreeTrailSection/FreeTrailSection";
 
 const About = () => {
   return (
@@ -57,6 +58,7 @@ const About = () => {
           <ClientReviewCarousel />
         </Box>
       </Box>
+      <FreeTrailSection />
     </>
   );
 };

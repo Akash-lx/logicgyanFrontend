@@ -105,6 +105,20 @@
   border-left: 2px solid green;
   height: 50px;
 }
+
+.containerEmailField {
+  width: 70%;
+}
+
+.trailEmailField {
+  outline: none;
+  border: none;
+  height: 70px;
+  font-size: large;
+  padding: 0px 10px;
+  width: 70%;
+}
+
 /* .navbarBg{
   backdrop-filter: blur(12px) saturate(84%);
   -webkit-backdrop-filter: blur(12px) saturate(84%);
