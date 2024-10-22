@@ -21,8 +21,19 @@ const About = () => {
             "linear-gradient(180deg, rgba(240,255,251,1) 0%, rgba(249,249,249,1) 83%)",
         }}
       >
-        <Box pl={2} display="flex" mb={5} alignItems="center">
-          <Typography variant="h3" fontWeight={600} mr={10}>
+        <Box
+          pl={2}
+          display="flex"
+          flexDirection={{ xs: "column", sm: "row" }}
+          mb={5}
+          alignItems="center"
+        >
+          <Typography
+            variant="h3"
+            fontWeight={600}
+            mr={10}
+            mb={{ xs: 3, sm: 0 }}
+          >
             Best dedicated team
           </Typography>
           <Box display="flex" alignItems="center">
@@ -41,8 +52,19 @@ const About = () => {
         </Box>
       </Box>
       <Box bgcolor="#F9F9F9" py={10} px={5}>
-        <Box pl={2} display="flex" mb={5} alignItems="center">
-          <Typography variant="h3" fontWeight={600} mr={10}>
+        <Box
+          pl={2}
+          display="flex"
+          mb={5}
+          alignItems="center"
+          flexDirection={{ xs: "column", sm: "row" }}
+        >
+          <Typography
+            variant="h3"
+            fontWeight={600}
+            mr={10}
+            mb={{ xs: 3, sm: 0 }}
+          >
             What our client say
           </Typography>
           <Box display="flex" alignItems="center">

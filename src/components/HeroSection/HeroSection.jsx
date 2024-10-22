@@ -1,9 +1,10 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useMediaQuery } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import React from "react";
 import { colors } from "../../config/colorPalette";
 
 const HeroSection = () => {
+  // const isTab = useMediaQuery("(min-width:786px)")
   return (
     <Box
       className="mainContainer"
@@ -30,7 +31,7 @@ const HeroSection = () => {
 
       <Grid container alignItems="center">
         <Grid size={{ sm: 12, md: 6 }}>
-          <Box py={3} pl={15}>
+          <Box py={3} px={{ xs: 5, sm: 0 }} pl={{ sm: 15 }}>
             <Typography
               variant="h1"
               fontWeight={600}

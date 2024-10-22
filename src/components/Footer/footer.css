@@ -1,0 +1,8 @@
+.footerList {
+  list-style-type: none;
+}
+
+.footerListItem {
+  margin-bottom: 0.7rem;
+  color: #5a7184;
+}

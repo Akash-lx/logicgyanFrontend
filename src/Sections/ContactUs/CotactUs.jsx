@@ -7,7 +7,7 @@ import { colors } from "../../config/colorPalette";
 
 const CotactUs = () => {
   return (
-    <Box>
+    <Box pb={10}>
       <ContactUsHero />
       <Box px={7}>
         <Box mb={5}>
@@ -15,8 +15,8 @@ const CotactUs = () => {
             Send Us A Message
           </Typography>
         </Box>
-        <Grid container spacing={2}>
-          <Grid size={7}>
+        <Grid container spacing={{ xs: 5, md: 2 }}>
+          <Grid size={{ xs: 12, md: 7 }}>
             <Box>
               <form>
                 <Stack direction="column" className="formContainer">
@@ -63,7 +63,7 @@ const CotactUs = () => {
               </form>
             </Box>
           </Grid>
-          <Grid size={5}>
+          <Grid size={{ xs: 12, md: 5 }}>
             <Box className="contactInfoContainer" p={3}>
               <Typography variant="h5" fontWeight={700} mb={2}>
                 Contact Information

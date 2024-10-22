@@ -41,12 +41,12 @@ const Features = () => {
         </Typography>
       </Box>
 
-      <Box display="flex" justifyContent="center">
+      <Box display="flex" flexWrap="wrap" justifyContent="center">
         {featuredCardContent.map((ele) => (
           <HoverLevitateCard content={cardContent(ele)} />
         ))}
       </Box>
-      <Box display="flex" justifyContent="center">
+      <Box display="flex" flexWrap="wrap" justifyContent="center">
         {featuredCardContent2.map((ele) => (
           <HoverLevitateCard content={cardContent(ele)} />
         ))}

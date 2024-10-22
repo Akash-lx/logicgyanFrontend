@@ -55,6 +55,7 @@ const FeatureHeroSection = () => {
                       backgroundColor: colors.secondry.main,
                     },
                     mr: 2,
+                    mb: { xs: 2, sm: 2, md: 2, lg: 0 },
                   }}
                 >
                   Get Started Today
@@ -79,17 +80,52 @@ const FeatureHeroSection = () => {
             </Box>
           </Grid>
           <Grid size={{ sm: 12, md: 7 }}>
-            <Box display="flex" justifyContent="center">
-              <Box>
+            <Box position="relative">
+              <Box
+                bgcolor="white"
+                p={{ xs: 2, sm: 3, lg: 5 }}
+                borderRadius={3}
+                sx={{ boxShadow: "-1px 0px 22px 1px rgba(0,0,0,0.75)" }}
+                position="absolute"
+                top={{ xs: 30 }}
+                left={25}
+                textAlign="center"
+                className="tiltCard"
+              >
+                <Typography variant="h6" mb={2} fontWeight={600}>
+                  82%
+                </Typography>
+                <Typography color="#5a7184">Engament of work</Typography>
+              </Box>
+              <Box
+                bgcolor="white"
+                p={{ xs: 2, sm: 3, lg: 5 }}
+                borderRadius={3}
+                sx={{ boxShadow: "-1px 0px 22px 1px rgba(0,0,0,0.75)" }}
+                position="absolute"
+                className="slideCard"
+                bottom={{ xs: 20 }}
+                right={45}
+              >
+                <Typography variant="h6" mb={2} fontWeight={600}>
+                  Jenifar Goz
+                </Typography>
+                <Typography variant="body2" color="#5a7184" mb={2}>
+                  CEO, Xavale
+                </Typography>
+                <Typography variant="body2" color="#5a7184">
+                  Everyone please read these condition ...
+                </Typography>
+              </Box>
+              <Box p={1}>
                 <Box>
-                  <Box>
-                    <img
-                      src="/service-solution.png"
-                      style={{
-                        objectFit: "cover",
-                      }}
-                    />
-                  </Box>
+                  <img
+                    src="/service-solution.png"
+                    style={{
+                      objectFit: "cover",
+                      width: "100%",
+                    }}
+                  />
                 </Box>
               </Box>
             </Box>

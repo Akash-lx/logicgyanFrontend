@@ -1,9 +1,14 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Stack } from "@mui/material";
 import Grid from "@mui/material/Grid2";
+import BCards from "./BCards";
 
 const BlogContent = () => {
-  return <Box>hello </Box>;
+  return (
+    <Box py={10}>
+      <BCards />
+    </Box>
+  );
 };
 
 export default BlogContent;

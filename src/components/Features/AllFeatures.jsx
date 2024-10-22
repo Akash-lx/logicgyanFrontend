@@ -19,7 +19,7 @@ const AllFeatures = () => {
       </Box>
       <Box px={7}>
         <Grid container spacing={4}>
-          <Grid size={4}>
+          <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
             <Box
               bgcolor="white"
               p={3}
@@ -64,7 +64,7 @@ const AllFeatures = () => {
               </Stack>
             </Box>
           </Grid>
-          <Grid size={4}>
+          <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
             <Box
               bgcolor="white"
               p={3}
@@ -109,7 +109,7 @@ const AllFeatures = () => {
               </Stack>
             </Box>
           </Grid>
-          <Grid size={4}>
+          <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
             <Box
               bgcolor="white"
               p={3}
@@ -154,7 +154,7 @@ const AllFeatures = () => {
               </Stack>
             </Box>
           </Grid>
-          <Grid size={4}>
+          <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
             <Box
               bgcolor="white"
               p={3}

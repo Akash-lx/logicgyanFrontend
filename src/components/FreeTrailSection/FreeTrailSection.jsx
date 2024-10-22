@@ -23,7 +23,7 @@ const FreeTrailSection = () => {
         <Box width="100%" display="flex" justifyContent="center">
           <Box
             className="containerEmailField"
-            p={2}
+            p={{ xs: 1, sm: 2 }}
             display="flex"
             alignItems="center"
             bgcolor="white"
@@ -37,7 +37,7 @@ const FreeTrailSection = () => {
             <Button
               sx={{
                 height: "70px",
-                width: "30%",
+                width: { xs: "10%", sm: "30%" },
                 ml: 2,
                 backgroundColor: colors.secondry.main,
                 color: "white",

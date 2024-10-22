@@ -8,7 +8,7 @@ const CollaborateSection = () => {
   return (
     <Box className="mainContainer" pt={10} mb={10}>
       <Grid container spacing={2}>
-        <Grid size={{ sm: 12, md: 5 }}>
+        <Grid size={{ sm: 12, md: 6 }}>
           <Box py={5} px={5}>
             <Typography variant="h1" fontWeight={600} mb={3}>
               Collaborate with your team anytime, anywhere.
@@ -71,7 +71,7 @@ const CollaborateSection = () => {
                   </Typography>
                 </Box>
               </Grid>
-              <Grid size={{ xs: 12, md: 6 }}>
+              <Grid size={{ xs: 12, md: 6 }} mb={3}>
                 <Box
                   sx={{
                     transition: "transform 0.7s ease-in-out",
@@ -140,19 +140,34 @@ const CollaborateSection = () => {
             </Box>
           </Box>
         </Grid>
-        <Grid size={{ sm: 12, md: 7 }}>
-          <Box display="flex" justifyContent="center">
-            <Box>
-              <Box>
-                <Box>
-                  <img
-                    src="/collaborate-hrrd.png"
-                    style={{
-                      objectFit: "cover",
-                    }}
-                  />
-                </Box>
-              </Box>
+        <Grid size={{ sm: 12, md: 6 }}>
+          <Box position="relative">
+            <Box
+              bgcolor="white"
+              p={5}
+              borderRadius={3}
+              sx={{ boxShadow: "-1px 0px 22px 1px rgba(0,0,0,0.75)" }}
+              position="absolute"
+              className="slideCard"
+              bottom={50}
+              left={70}
+            >
+              <Typography variant="h6" mb={2} fontWeight={600}>
+                Jenifar Goz
+              </Typography>
+              <Typography variant="body2" color="#5a7184" mb={2}>
+                CEO, Xavale
+              </Typography>
+              <Typography variant="body2" color="#5a7184">
+                Everyone please read these condition ...
+              </Typography>
+            </Box>
+            <Box p={2}>
+              <img
+                src="/collaborate-hrrd.png"
+                alt="collab Logo"
+                style={{ objectFit: "cover", width: "100%" }}
+              />
             </Box>
           </Box>
         </Grid>

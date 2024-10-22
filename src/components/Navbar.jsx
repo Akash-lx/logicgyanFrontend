@@ -1,11 +1,22 @@
 import React, { useState, useEffect } from "react";
-import { AppBar, Toolbar, Box, Typography, Button } from "@mui/material";
+import {
+  AppBar,
+  Toolbar,
+  Box,
+  Typography,
+  Button,
+  useMediaQuery,
+} from "@mui/material";
 import { colors } from "../config/colorPalette";
 import PrimaryButton from "./Buttons/PrimaryButton";
 import { useNavigate } from "react-router-dom";
+import NavBarDrawer from "./Drawer/NavBarDrawer";
 
 const HeadNavbar = () => {
   const [elevate, setElevate] = useState(false);
+
+  const isMobile = useMediaQuery("(max-width:1023px)");
+  const isScreen = useMediaQuery("(min-width:1023px)");
 
   const navigate = useNavigate();
 
@@ -41,77 +52,100 @@ const HeadNavbar = () => {
         transition: "box-shadow 0.3s ease-in-out", // Smooth transition
       }}
     >
-      <Box px={10}>
+      <Box px={{ md: 10 }}>
         <Toolbar sx={{ justifyContent: "space-between" }}>
           {/* Logo section */}
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              bgcolor: elevate ? "none" : colors.primary.main,
-              transition: "background-color 0.75s ease",
-            }}
-          >
-            <img src="/logicgyan.png" alt="Logo" width="125" height="75" />
+          <Box display="flex" alignItems="center">
+            {elevate ? (
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  transition: "background-color 0.75s ease",
+                }}
+              >
+                <img src="/logicgyan.png" alt="Logo" width="125" height="80" />
+              </Box>
+            ) : (
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  py: 2,
+                  transition: "background-color 0.75s ease",
+                }}
+              >
+                <img src="/logicgyan3.png" alt="Logo" width="125" height="50" />
+              </Box>
+            )}
+            {isMobile ? (
+              <Box>
+                <NavBarDrawer />
+              </Box>
+            ) : null}
           </Box>
           {/* Menu options */}
-          <Box sx={{ display: "flex", gap: 5 }}>
-            <Typography
-              className="menuItem"
-              fontWeight={550}
-              sx={{
-                color: elevate ? colors.white : colors.primary.main,
-                cursor: "pointer",
-              }}
-              onClick={() => {
-                handleNavigate();
-              }}
-            >
-              Home
-            </Typography>
-            <Typography
-              className="menuItem"
-              fontWeight={550}
-              sx={{
-                color: elevate ? colors.white : colors.primary.main,
-                cursor: "pointer",
-              }}
-              onClick={() => {
-                handleNavigate("about");
-              }}
-            >
-              About Us
-            </Typography>
-            <Typography
-              className="menuItem"
-              fontWeight={550}
-              sx={{
-                color: elevate ? colors.white : colors.primary.main,
-                cursor: "pointer",
-              }}
-              onClick={() => {
-                handleNavigate("feature");
-              }}
-            >
-              Features
-            </Typography>
-            <Typography
-              className="menuItem"
-              fontWeight={550}
-              sx={{
-                color: elevate ? colors.white : colors.primary.main,
-                cursor: "pointer",
-              }}
-              onClick={() => {
-                handleNavigate("blog");
-              }}
-            >
-              Blogs
-            </Typography>
-          </Box>
-          <Box>
-            <PrimaryButton title="Contact Us" btnFunction={handleNavigate} />
-          </Box>
+          {isScreen ? (
+            <Box sx={{ display: "flex", gap: 5 }}>
+              <Typography
+                className="menuItem"
+                fontWeight={550}
+                sx={{
+                  color: elevate ? colors.white : colors.primary.main,
+                  cursor: "pointer",
+                }}
+                onClick={() => {
+                  handleNavigate();
+                }}
+              >
+                Home
+              </Typography>
+              <Typography
+                className="menuItem"
+                fontWeight={550}
+                sx={{
+                  color: elevate ? colors.white : colors.primary.main,
+                  cursor: "pointer",
+                }}
+                onClick={() => {
+                  handleNavigate("about");
+                }}
+              >
+                About Us
+              </Typography>
+              <Typography
+                className="menuItem"
+                fontWeight={550}
+                sx={{
+                  color: elevate ? colors.white : colors.primary.main,
+                  cursor: "pointer",
+                }}
+                onClick={() => {
+                  handleNavigate("feature");
+                }}
+              >
+                Features
+              </Typography>
+              <Typography
+                className="menuItem"
+                fontWeight={550}
+                sx={{
+                  color: elevate ? colors.white : colors.primary.main,
+                  cursor: "pointer",
+                }}
+                onClick={() => {
+                  handleNavigate("blog");
+                }}
+              >
+                Blogs
+              </Typography>
+            </Box>
+          ) : null}
+          {isScreen ? (
+            <Box>
+              <PrimaryButton title="Contact Us" btnFunction={handleNavigate} />
+            </Box>
+          ) : null}
         </Toolbar>
       </Box>
       {elevate ? <hr className="navbarHr" /> : null}

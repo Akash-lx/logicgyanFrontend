@@ -21,7 +21,7 @@ const LatestWork = () => {
           visitors than any website. visually appearing.
         </Typography>
       </Box>
-      <Box p={10}>
+      <Box px={{ xs: 5, sm: 10 }} py={10}>
         <Grid container spacing={5}>
           <Grid size={{ xs: 12, sm: 6, md: 4 }}>
             <WorkCards />

@@ -29,7 +29,7 @@ const HeroSectionAboutUs = () => {
       </Box>
       <Grid container>
         <Grid size={{ sm: 12, md: 5 }}>
-          <Box py={5} px={5}>
+          <Box py={{ xs: 2, sm: 5 }} px={5}>
             <Typography variant="h1" fontWeight={600} mb={3}>
               An Exceptionally unique experience Tailored to you
             </Typography>
@@ -91,7 +91,7 @@ const HeroSectionAboutUs = () => {
                   </Typography>
                 </Box>
               </Grid>
-              <Grid size={{ xs: 12, md: 6 }}>
+              <Grid size={{ xs: 12, md: 6 }} mb={3}>
                 <Box
                   sx={{
                     transition: "transform 0.7s ease-in-out",
@@ -153,11 +153,12 @@ const HeroSectionAboutUs = () => {
               },
             }}
           >
-            <Box>
+            <Box p={2}>
               <img
                 src="/about-us-hero-img.png"
                 style={{
                   objectFit: "cover",
+                  width: "100%",
                   border: "3px solid #ccaa00",
                   borderRadius: "20px",
                   boxShadow: "-1px -1px 18px -4px rgba(204,170,0,0.73)",

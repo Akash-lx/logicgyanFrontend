@@ -9,7 +9,7 @@ const Pricings = () => {
   return (
     <Box>
       <Grid container spacing={2}>
-        <Grid size={4} px={2}>
+        <Grid size={{ xs: 12, md: 4 }} px={2}>
           <Box
             sx={{
               borderRadius: 3,
@@ -68,7 +68,7 @@ const Pricings = () => {
             </Box>
           </Box>
         </Grid>
-        <Grid size={4} px={2}>
+        <Grid size={{ xs: 12, md: 4 }} px={2}>
           <Box
             component={Paper}
             elevation={5}
@@ -130,7 +130,7 @@ const Pricings = () => {
             </Box>
           </Box>
         </Grid>
-        <Grid size={4} px={2}>
+        <Grid size={{ xs: 12, md: 4 }} px={2}>
           <Box
             sx={{
               borderRadius: 3,

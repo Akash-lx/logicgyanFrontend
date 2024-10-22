@@ -108,6 +108,9 @@
 
 .containerEmailField {
   width: 70%;
+  @media (max-width: 678px) {
+    width: 100%;
+  }
 }
 
 .trailEmailField {
@@ -117,6 +120,38 @@
   font-size: large;
   padding: 0px 10px;
   width: 70%;
+}
+
+.tiltCard {
+  animation: tilt 3s linear infinite;
+}
+
+@keyframes tilt {
+  0% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(3deg);
+  }
+  60% {
+    transform: rotate(-3deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.slideCard {
+  animation: cardslide 2s linear infinite alternate;
+}
+@keyframes cardslide {
+  0% {
+    transform: translateX(40px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 /* .navbarBg{

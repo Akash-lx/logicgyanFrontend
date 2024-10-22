@@ -20,9 +20,9 @@ const IntricateYourApps = () => {
           </Typography>
         </Typography>
       </Box>
-      <Box px={8}>
-        <Grid container spacing={2}>
-          <Grid size={2}>
+      <Box px={{ xs: 3, md: 8 }}>
+        <Grid container spacing={{ xs: 2 }}>
+          <Grid size={{ xs: 6, sm: 4, md: 3, lg: 2 }}>
             <Box
               bgcolor="white"
               p={4}
@@ -44,7 +44,7 @@ const IntricateYourApps = () => {
               </Typography>
             </Box>
           </Grid>
-          <Grid size={2}>
+          <Grid size={{ xs: 6, sm: 4, md: 3, lg: 2 }}>
             <Box
               bgcolor="white"
               p={4}
@@ -66,7 +66,7 @@ const IntricateYourApps = () => {
               </Typography>
             </Box>
           </Grid>
-          <Grid size={2}>
+          <Grid size={{ xs: 6, sm: 4, md: 3, lg: 2 }}>
             <Box
               bgcolor="white"
               p={4}
@@ -88,7 +88,7 @@ const IntricateYourApps = () => {
               </Typography>
             </Box>
           </Grid>
-          <Grid size={2}>
+          <Grid size={{ xs: 6, sm: 4, md: 3, lg: 2 }}>
             <Box
               bgcolor="white"
               p={4}
@@ -110,7 +110,7 @@ const IntricateYourApps = () => {
               </Typography>
             </Box>
           </Grid>
-          <Grid size={2}>
+          <Grid size={{ xs: 6, sm: 4, md: 3, lg: 2 }}>
             <Box
               bgcolor="white"
               p={4}
@@ -132,7 +132,7 @@ const IntricateYourApps = () => {
               </Typography>
             </Box>
           </Grid>
-          <Grid size={2}>
+          <Grid size={{ xs: 6, sm: 4, md: 3, lg: 2 }}>
             <Box
               bgcolor="white"
               p={4}
