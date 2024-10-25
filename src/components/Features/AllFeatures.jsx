@@ -28,7 +28,6 @@ const AllFeatures = () => {
               sx={{
                 transition: "transform 0.5s ease",
                 "&:hover": {
-                  boxShadow: "0px 0px 18px 19px rgba(222,222,222,1)",
                   transform: "translateY(-2px)", // Move the card up by 4px on hover
                 },
               }}

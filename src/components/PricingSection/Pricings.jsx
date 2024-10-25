@@ -8,13 +8,16 @@ import PricingButtons from "../Buttons/PricingButtons";
 const Pricings = () => {
   return (
     <Box>
-      <Grid container spacing={2}>
-        <Grid size={{ xs: 12, md: 4 }} px={2}>
+      <Grid container>
+        <Grid size={{ xs: 12, md: 4 }} justifyItems="end">
           <Box
             sx={{
               borderRadius: 3,
             }}
             p={3}
+            textAlign="center"
+            data-aos="fade-right"
+            data-aos-duration="1000"
           >
             <Typography variant="h6" mb={3} fontWeight={600}>
               Basic Plan
@@ -68,15 +71,16 @@ const Pricings = () => {
             </Box>
           </Box>
         </Grid>
-        <Grid size={{ xs: 12, md: 4 }} px={2}>
+        <Grid size={{ xs: 12, md: 4 }} px={2} justifyItems="center">
           <Box
             component={Paper}
-            elevation={5}
+            elevation={7}
             sx={{
               borderRadius: 3,
               backgroundColor: "white",
             }}
             p={3}
+            textAlign="center"
           >
             <Typography variant="h6" mb={3} fontWeight={600}>
               Basic Plan
@@ -130,12 +134,15 @@ const Pricings = () => {
             </Box>
           </Box>
         </Grid>
-        <Grid size={{ xs: 12, md: 4 }} px={2}>
+        <Grid size={{ xs: 12, md: 4 }} px={2} justifyItems="start">
           <Box
             sx={{
               borderRadius: 3,
             }}
             p={3}
+            textAlign="center"
+            data-aos="fade-left"
+            data-aos-duration="1000"
           >
             <Typography variant="h6" mb={3} fontWeight={600}>
               Basic Plan

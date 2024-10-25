@@ -31,12 +31,11 @@ const HeroSectionAboutUs = () => {
         <Grid size={{ sm: 12, md: 5 }}>
           <Box py={{ xs: 2, sm: 5 }} px={5}>
             <Typography variant="h1" fontWeight={600} mb={3}>
-              An Exceptionally unique experience Tailored to you
+              About LogicGyan: Your Partner in Learning
             </Typography>
             <Typography variant="body1" fontWeight={550} color="#5a7184">
-              Continually administrate process-centric human capital rather than
-              bleeding-edge methodologies. Distinctively supply accurate methods
-              of empowerment before
+              Empowering learners through accessible education and expert
+              guidance.
             </Typography>
           </Box>
           <Box py={5} px={5}>
@@ -54,15 +53,15 @@ const HeroSectionAboutUs = () => {
                   }}
                 >
                   <Typography
-                    fontSize="1.5rem"
+                    variant="body1"
                     display="flex"
                     alignItems="center"
                   >
                     <CheckCircleIcon
                       className="icon"
-                      sx={{ color: "inherit" }}
+                      sx={{ color: "inherit", mr: 1 }}
                     />
-                    Organize your data
+                    Mission-Driven Learning
                   </Typography>
                 </Box>
               </Grid>
@@ -79,15 +78,15 @@ const HeroSectionAboutUs = () => {
                   }}
                 >
                   <Typography
-                    fontSize="1.5rem"
+                    variant="body1"
                     display="flex"
                     alignItems="center"
                   >
                     <CheckCircleIcon
                       className="icon"
-                      sx={{ color: "inherit" }}
+                      sx={{ color: "inherit", mr: 1 }}
                     />
-                    Organize your data
+                    Innovative Learning Platform
                   </Typography>
                 </Box>
               </Grid>
@@ -104,15 +103,15 @@ const HeroSectionAboutUs = () => {
                   }}
                 >
                   <Typography
-                    fontSize="1.5rem"
+                    variant="body1"
                     display="flex"
                     alignItems="center"
                   >
                     <CheckCircleIcon
                       className="icon"
-                      sx={{ color: "inherit" }}
+                      sx={{ color: "inherit", mr: 1 }}
                     />
-                    Organize your data
+                    Diverse Course Selection
                   </Typography>
                 </Box>
               </Grid>
@@ -129,15 +128,15 @@ const HeroSectionAboutUs = () => {
                   }}
                 >
                   <Typography
-                    fontSize="1.5rem"
+                    variant="body1"
                     display="flex"
                     alignItems="center"
                   >
                     <CheckCircleIcon
                       className="icon"
-                      sx={{ color: "inherit" }}
+                      sx={{ color: "inherit", mr: 1 }}
                     />
-                    Organize your data
+                    Community and Support
                   </Typography>
                 </Box>
               </Grid>
@@ -171,44 +170,47 @@ const HeroSectionAboutUs = () => {
           <Box py={3} px={3}>
             <Box mb={3}>
               <Typography
-                variant="h5"
+                variant="h6"
                 fontWeight={600}
                 mb={3}
                 color={colors.primary.main}
               >
-                Our Customer
+                Mission-Driven Learning
               </Typography>
               <Typography variant="body1" fontWeight={550} color="#5a7184">
-                Business advisory service advises current and future business
-                prospects of a client, with the aim of customers.
+                We are dedicated to making quality education accessible to
+                everyone, empowering learners to reach their full potential.
               </Typography>
             </Box>
             <Box mb={3}>
               <Typography
-                variant="h5"
+                variant="h6"
                 fontWeight={600}
                 mb={3}
                 color={colors.primary.main}
+                lineHeight={1}
               >
-                Our Product
+                Innovative Learning Platform
               </Typography>
               <Typography variant="body1" fontWeight={550} color="#5a7184">
-                Business advisory service advises current and future business
-                prospects of a client, with the aim of customers.
+                LogicGyan combines online recorded lectures with interactive
+                offline classes, offering a comprehensive and engaging learning
+                experience.
               </Typography>
             </Box>
             <Box mb={3}>
               <Typography
-                variant="h5"
+                variant="h6"
                 fontWeight={600}
                 mb={3}
                 color={colors.primary.main}
               >
-                Our Services
+                Community and Support
               </Typography>
               <Typography variant="body1" fontWeight={550} color="#5a7184">
-                Business advisory service advises current and future business
-                prospects of a client, with the aim of customers.
+                We foster a collaborative environment where learners can connect
+                with instructors and peers, enhancing their educational journey
+                through shared insights and support.
               </Typography>
             </Box>
           </Box>

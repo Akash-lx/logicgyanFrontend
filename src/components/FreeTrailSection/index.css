@@ -1,0 +1,61 @@
+:root {
+  --d: 2500ms;
+  --angle: 90deg;
+  --gradX: 100%;
+  --gradY: 50%;
+  --c1: #04775a;
+  --c2: rgba(168, 239, 255, 0.1);
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: "<percentage>";
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: "<percentage>";
+  initial-value: 0%;
+  inherits: true;
+}
+
+.contactusInput {
+  font-size: large;
+  margin-bottom: 1rem;
+  outline: none;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  border: 1px solid rgba(90, 113, 132, 0.25);
+}
+.contactusTextArea {
+  font-size: large;
+  outline: none;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  border: 1px solid rgba(90, 113, 132, 0.25);
+}
+
+.LinkContainer {
+  border: 2px solid black;
+  border-image: conic-gradient(
+      from var(--angle),
+      var(--c2),
+      var(--c1) 0.1turn,
+      var(--c1) 0.15turn,
+      var(--c2) 0.25turn
+    )
+    30;
+  animation: borderRotate var(--d) linear infinite forwards;
+}
+
+@keyframes borderRotate {
+  100% {
+    --angle: 420deg;
+  }
+}

@@ -1,7 +1,8 @@
 import React from "react";
-import { Box, Typography, Button } from "@mui/material";
+import { Box, Typography, Button, Paper } from "@mui/material";
 import { colors } from "../../config/colorPalette";
 import Grid from "@mui/material/Grid2";
+import GroupsIcon from "@mui/icons-material/Groups";
 
 const EverythingOnePlace = () => {
   return (
@@ -12,10 +13,11 @@ const EverythingOnePlace = () => {
             <Box>
               <Box p={2} position="relative">
                 <Box
+                  component={Paper}
+                  elevation={4}
                   bgcolor="white"
                   p={{ xs: 2, sm: 3, lg: 5 }}
                   borderRadius={3}
-                  sx={{ boxShadow: "-1px 0px 22px 1px rgba(0,0,0,0.75)" }}
                   position="absolute"
                   top={30}
                   right={100}
@@ -23,17 +25,27 @@ const EverythingOnePlace = () => {
                   className="tiltCard"
                 >
                   <Typography mb={2} color="#5a7184">
-                    Income This Month
+                    This Month Enrolled Students
                   </Typography>
-                  <Typography variant="h6" fontWeight={600}>
-                    $50.36
+                  <Typography
+                    variant="h6"
+                    fontWeight={600}
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                  >
+                    <GroupsIcon
+                      sx={{ mr: 2, fontSize: "2.5rem", color: "#038788" }}
+                    />
+                    52
                   </Typography>
                 </Box>
                 <Box
+                  component={Paper}
+                  elevation={4}
                   bgcolor="white"
                   p={{ xs: 2, sm: 3, lg: 5 }}
                   borderRadius={3}
-                  sx={{ boxShadow: "-1px 0px 22px 1px rgba(0,0,0,0.75)" }}
                   position="absolute"
                   className="slideCard"
                   bottom={100}
@@ -62,7 +74,7 @@ const EverythingOnePlace = () => {
             </Box>
           </Grid>
           <Grid size={{ sm: 12, md: 6 }} py={5} px={5}>
-            <Box>
+            <Box data-aos="fade-down" data-aos-duration="700">
               <Typography variant="h1" fontWeight={600} mb={3}>
                 Everything you need in one place
               </Typography>
@@ -81,8 +93,12 @@ const EverythingOnePlace = () => {
                     transform: "translateY(-3px)", // Move the card up by 4px on hover
                   },
                 }}
+                data-aos="fade-up"
+                data-aos-duration="1000"
               >
-                <Typography variant="h6">Real-time Data</Typography>
+                <Typography variant="h6">
+                  Comprehensive Course Library
+                </Typography>
               </Box>
               <Box
                 p={3}
@@ -97,8 +113,10 @@ const EverythingOnePlace = () => {
                     transform: "translateY(-3px)", // Move the card up by 4px on hover
                   },
                 }}
+                data-aos="fade-up"
+                data-aos-duration="1200"
               >
-                <Typography variant="h6">End-to-end encryption</Typography>
+                <Typography variant="h6">Integrated Learning Tools</Typography>
               </Box>
               <Box
                 p={3}
@@ -113,8 +131,12 @@ const EverythingOnePlace = () => {
                     transform: "translateY(-3px)", // Move the card up by 4px on hover
                   },
                 }}
+                data-aos="fade-up"
+                data-aos-duration="1400"
               >
-                <Typography variant="h6">FDIC Insured</Typography>
+                <Typography variant="h6">
+                  Seamless Offline and Online Access
+                </Typography>
               </Box>
               <Box
                 p={3}
@@ -129,8 +151,12 @@ const EverythingOnePlace = () => {
                     transform: "translateY(-3px)", // Move the card up by 4px on hover
                   },
                 }}
+                data-aos="fade-up"
+                data-aos-duration="1600"
               >
-                <Typography variant="h6">REST API enabled</Typography>
+                <Typography variant="h6">
+                  Personalized Learning Experience
+                </Typography>
               </Box>
             </Box>
           </Grid>

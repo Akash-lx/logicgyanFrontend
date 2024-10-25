@@ -7,12 +7,14 @@ const HoverLevitateCard = ({ content }) => {
       className="levitateOnHover"
       elevation={7}
       sx={{
-        px: 5,
+        px: 3,
         py: 5,
         m: 2,
         borderRadius: 3,
-        transition: "transform 0.5s ease", // Smooth transition for the levitation
+        cursor: "pointer",
+        transition: "transform 0.6s ease-in", // Smooth transition for the levitation
         "&:hover": {
+          boxShadow: "0px 0px 40px -1px rgba(0,0,0,0.75)",
           transform: "translateY(-5px)", // Move the card up by 4px on hover
         },
       }}

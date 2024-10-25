@@ -6,3 +6,13 @@
   margin-bottom: 0.7rem;
   color: #5a7184;
 }
+.listItemContent {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.listItemContent:hover {
+  font-weight: 700;
+  padding: 0 5px;
+  color: #038788;
+}

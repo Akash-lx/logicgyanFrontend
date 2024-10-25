@@ -2,11 +2,17 @@ import React from "react";
 import Grid from "@mui/material/Grid2";
 import { Box, Typography } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import FacebookIcon from "@mui/icons-material/Facebook";
 import IconButton from "@mui/material/IconButton";
+import XIcon from "@mui/icons-material/X";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { colors } from "../../config/colorPalette";
 import "./footer.css";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <Box py={7} px={3}>
       <Grid container spacing={3}>
@@ -25,16 +31,53 @@ const Footer = () => {
               Professionally scale cross functional human capital and extensive
               technology.
             </Typography>
+            <Box mb={2}>
+              <IconButton size="large">
+                <LinkedInIcon fontSize="inherit" />
+              </IconButton>
+              <IconButton size="large">
+                <InstagramIcon fontSize="inherit" />
+              </IconButton>
+              <IconButton size="large">
+                <FacebookIcon fontSize="inherit" />
+              </IconButton>
+              <IconButton size="large">
+                <XIcon fontSize="inherit" />
+              </IconButton>
+              <IconButton size="large">
+                <WhatsAppIcon fontSize="inherit" />
+              </IconButton>
+            </Box>
             <Box>
-              <IconButton size="large">
-                <LinkedInIcon fontSize="inherit" />
-              </IconButton>
-              <IconButton size="large">
-                <LinkedInIcon fontSize="inherit" />
-              </IconButton>
-              <IconButton size="large">
-                <LinkedInIcon fontSize="inherit" />
-              </IconButton>
+              <Typography
+                variant="caption"
+                mr={1}
+                className="captioncontent"
+                onClick={() => {
+                  navigate("/TermsAndCondition");
+                }}
+              >
+                T&C
+              </Typography>
+              <Typography
+                variant="caption"
+                mr={1}
+                className="captioncontent"
+                onClick={() => {
+                  navigate("/RefundAndPolicy");
+                }}
+              >
+                Refund Policy
+              </Typography>
+              <Typography
+                variant="caption"
+                className="captioncontent"
+                onClick={() => {
+                  navigate("/PrivacyAndPolicy");
+                }}
+              >
+                Privacy Policy
+              </Typography>
             </Box>
           </Box>
         </Grid>
@@ -47,16 +90,24 @@ const Footer = () => {
           <Box>
             <ul className="footerList">
               <li className="footerListItem">
-                <Typography variant="body1">Documentation</Typography>
+                <Typography variant="body1" className="listItemContent">
+                  Documentation
+                </Typography>
               </li>
               <li className="footerListItem">
-                <Typography variant="body1">Design</Typography>
+                <Typography variant="body1" className="listItemContent">
+                  Design
+                </Typography>
               </li>
               <li className="footerListItem">
-                <Typography variant="body1">Themes</Typography>
+                <Typography variant="body1" className="listItemContent">
+                  Themes
+                </Typography>
               </li>
               <li className="footerListItem">
-                <Typography variant="body1">Illustrations</Typography>
+                <Typography variant="body1" className="listItemContent">
+                  Illustrations
+                </Typography>
               </li>
             </ul>
           </Box>
@@ -70,16 +121,24 @@ const Footer = () => {
           <Box>
             <ul className="footerList">
               <li className="footerListItem">
-                <Typography variant="body1">About</Typography>
+                <Typography variant="body1" className="listItemContent">
+                  About
+                </Typography>
               </li>
               <li className="footerListItem">
-                <Typography variant="body1">Terms</Typography>
+                <Typography variant="body1" className="listItemContent">
+                  Terms
+                </Typography>
               </li>
               <li className="footerListItem">
-                <Typography variant="body1">Privacy Policy</Typography>
+                <Typography variant="body1" className="listItemContent">
+                  Privacy Policy
+                </Typography>
               </li>
               <li className="footerListItem">
-                <Typography variant="body1">Careers</Typography>
+                <Typography variant="body1" className="listItemContent">
+                  Careers
+                </Typography>
               </li>
             </ul>
           </Box>
@@ -93,13 +152,19 @@ const Footer = () => {
           <Box>
             <ul className="footerList">
               <li className="footerListItem">
-                <Typography variant="body1">Select</Typography>
+                <Typography variant="body1" className="listItemContent">
+                  Select
+                </Typography>
               </li>
               <li className="footerListItem">
-                <Typography variant="body1">Service</Typography>
+                <Typography variant="body1" className="listItemContent">
+                  Service
+                </Typography>
               </li>
               <li className="footerListItem">
-                <Typography variant="body1">Payment</Typography>
+                <Typography variant="body1" className="listItemContent">
+                  Payment
+                </Typography>
               </li>
             </ul>
           </Box>

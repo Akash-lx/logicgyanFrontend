@@ -3,6 +3,8 @@ import Grid from "@mui/material/Grid2";
 import React from "react";
 import { colors } from "../../config/colorPalette";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import { FaGooglePlay } from "react-icons/fa";
 
 const CollaborateSection = () => {
   return (
@@ -14,9 +16,12 @@ const CollaborateSection = () => {
               Collaborate with your team anytime, anywhere.
             </Typography>
             <Typography variant="body1" fontWeight={550} color="#5a7184">
-              Continually administrate process-centric human capital rather than
-              bleeding-edge methodologies. Distinctively supply accurate methods
-              of empowerment before
+              At LogicGyan, our team of qualified educators is dedicated to
+              providing an exceptional learning experience. Through interactive
+              teaching methods and real-world applications, instructors engage
+              students and foster a collaborative environment. With personalized
+              guidance and continuous feedback, we empower learners to achieve
+              their goals and build confidence in their skills.
             </Typography>
           </Box>
           <Box py={5} px={5}>
@@ -34,15 +39,17 @@ const CollaborateSection = () => {
                   }}
                 >
                   <Typography
-                    fontSize="1.5rem"
+                    fontSize="1.2rem"
                     display="flex"
                     alignItems="center"
                   >
-                    <CheckCircleIcon
-                      className="icon"
-                      sx={{ color: "inherit" }}
+                    <DotLottieReact
+                      src="lottiefilesIcons/checkMark.lottie"
+                      loop
+                      autoplay
+                      style={{ width: 50, height: 50 }}
                     />
-                    Organize your data
+                    Qualified Educators
                   </Typography>
                 </Box>
               </Grid>
@@ -59,15 +66,17 @@ const CollaborateSection = () => {
                   }}
                 >
                   <Typography
-                    fontSize="1.5rem"
+                    fontSize="1.2rem"
                     display="flex"
                     alignItems="center"
                   >
-                    <CheckCircleIcon
-                      className="icon"
-                      sx={{ color: "inherit" }}
+                    <DotLottieReact
+                      src="lottiefilesIcons/checkMark.lottie"
+                      loop
+                      autoplay
+                      style={{ width: 50, height: 50 }}
                     />
-                    Always in sync
+                    Interactive Learning Environment
                   </Typography>
                 </Box>
               </Grid>
@@ -84,15 +93,17 @@ const CollaborateSection = () => {
                   }}
                 >
                   <Typography
-                    fontSize="1.5rem"
+                    fontSize="1.2rem"
                     display="flex"
                     alignItems="center"
                   >
-                    <CheckCircleIcon
-                      className="icon"
-                      sx={{ color: "inherit" }}
+                    <DotLottieReact
+                      src="lottiefilesIcons/checkMark.lottie"
+                      loop
+                      autoplay
+                      style={{ width: 50, height: 50 }}
                     />
-                    Work with any team
+                    Real-World Applications
                   </Typography>
                 </Box>
               </Grid>
@@ -109,15 +120,17 @@ const CollaborateSection = () => {
                   }}
                 >
                   <Typography
-                    fontSize="1.5rem"
+                    fontSize="1.2rem"
                     display="flex"
                     alignItems="center"
                   >
-                    <CheckCircleIcon
-                      className="icon"
-                      sx={{ color: "inherit" }}
+                    <DotLottieReact
+                      src="lottiefilesIcons/checkMark.lottie"
+                      loop
+                      autoplay
+                      style={{ width: 50, height: 50 }}
                     />
-                    Embedded analytics
+                    Personalized Guidance
                   </Typography>
                 </Box>
               </Grid>
@@ -135,6 +148,9 @@ const CollaborateSection = () => {
                   },
                 }}
               >
+                <Box mr={2}>
+                  <FaGooglePlay />
+                </Box>
                 Get Started Today
               </Button>
             </Box>
@@ -144,7 +160,7 @@ const CollaborateSection = () => {
           <Box position="relative">
             <Box
               bgcolor="white"
-              p={5}
+              p={{ xs: 2, sm: 3, lg: 5 }}
               borderRadius={3}
               sx={{ boxShadow: "-1px 0px 22px 1px rgba(0,0,0,0.75)" }}
               position="absolute"

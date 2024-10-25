@@ -3,6 +3,7 @@ import { Box, Typography, Button } from "@mui/material";
 import { colors } from "../../config/colorPalette";
 import Grid from "@mui/material/Grid2";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
+import { FaGooglePlay } from "react-icons/fa";
 
 const FeatureHeroSection = () => {
   return (
@@ -32,14 +33,13 @@ const FeatureHeroSection = () => {
           <Grid size={{ sm: 12, md: 5 }}>
             <Box py={5} px={5}>
               <Typography variant="h1" fontWeight={600} mb={3}>
-                We provide best business solutions
+                Explore the Features of LogicGyan
               </Typography>
               <Typography variant="body1" fontWeight={550} color="#5a7184">
-                Saasland is a exclusive project management agency. we provide
-                better solutions for you. We Create custom landing pages with
-                Saasland and converts more visitors than any website. create
-                visually appearing data visualizations and insightful dashboards
-                in minutes.
+                At LogicGyan, we offer a range of innovative features tailored
+                to provide you with a seamless and engaging educational journey.
+                From flexible learning options to expert guidance, discover how
+                our platform empowers you to succeed in your learning goals.
               </Typography>
             </Box>
             <Box py={5} px={5}>
@@ -58,6 +58,7 @@ const FeatureHeroSection = () => {
                     mb: { xs: 2, sm: 2, md: 2, lg: 0 },
                   }}
                 >
+                  <FaGooglePlay style={{ marginRight: 10 }} />
                   Get Started Today
                 </Button>
                 <Button

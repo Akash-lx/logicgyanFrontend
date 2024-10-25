@@ -33,20 +33,30 @@ const HeroSection = () => {
         <Grid size={{ sm: 12, md: 6 }}>
           <Box py={3} px={{ xs: 5, sm: 0 }} pl={{ sm: 15 }}>
             <Typography
-              variant="h1"
-              fontWeight={600}
+              // variant="h1"
+              lineHeight={1}
+              mb={3}
+              fontWeight={800}
               color={colors.primary.main}
+              sx={{ fontSize: { xs: "1.7rem", sm: "2.5rem", lg: "4rem" } }}
             >
-              Transform Your Career with
-              <br /> On-Demand Skills –{"  "}
-              <Typography
-                variant="span"
-                fontWeight={600}
-                color={colors.primary.light}
-              >
-                <br />
-                Join Logic Gyan!
-              </Typography>
+              Unlock Your Potential with LogicGyan!
+            </Typography>
+            <Typography
+              variant="h5"
+              lineHeight={1}
+              color="#038788"
+              fontWeight={600}
+            >
+              Join thousands of learners and gain{" "}
+              <Typography variant="span" color="#012628">
+                on-demand skills
+              </Typography>{" "}
+              with{" "}
+              <Typography variant="span" color="#012628">
+                expert-led courses
+              </Typography>{" "}
+              that fit your schedule.
             </Typography>
           </Box>
         </Grid>
@@ -54,7 +64,7 @@ const HeroSection = () => {
           <Box p={3}>
             {" "}
             <img
-              src="/logicgyan.png"
+              src="/herosection.png"
               alt="Logo"
               style={{ objectFit: "cover", width: "100%" }}
             />

@@ -8,7 +8,7 @@ const PrimaryButton = ({ title, btnFunction }) => {
       variant="contained"
       sx={{ backgroundColor: colors.secondry.main }}
       onClick={() => {
-        btnFunction("contactUs");
+        btnFunction("contactUs", "Contact");
       }}
     >
       {title}

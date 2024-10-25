@@ -16,7 +16,7 @@ const BlogHeroSection = () => {
       pt={10}
       mb={10}
     >
-      <Box py={10}>
+      <Box pt={10}>
         <Typography variant="h1" fontWeight={700} textAlign="center">
           Blog
         </Typography>

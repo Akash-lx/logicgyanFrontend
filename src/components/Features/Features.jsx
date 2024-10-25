@@ -21,32 +21,35 @@ const Features = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <Box mb={3}>
+      <Box mb={3} data-aos="fade-down" data-aos-duration="1500">
         <Typography
-          variant="h3"
+          variant="h2"
           fontWeight={600}
           color={colors.primary.main}
           textAlign="center"
         >
-          Featured We
-        </Typography>
-        <br />
-        <Typography
-          variant="h3"
-          fontWeight={600}
-          color={colors.primary.main}
-          textAlign="center"
-        >
-          Provide for You
+          Featured We Provide for You
         </Typography>
       </Box>
 
-      <Box display="flex" flexWrap="wrap" justifyContent="center">
+      <Box
+        display="flex"
+        flexWrap="wrap"
+        justifyContent="center"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+      >
         {featuredCardContent.map((ele) => (
           <HoverLevitateCard content={cardContent(ele)} />
         ))}
       </Box>
-      <Box display="flex" flexWrap="wrap" justifyContent="center">
+      <Box
+        display="flex"
+        flexWrap="wrap"
+        justifyContent="center"
+        data-aos="fade-left"
+        data-aos-duration="1500"
+      >
         {featuredCardContent2.map((ele) => (
           <HoverLevitateCard content={cardContent(ele)} />
         ))}

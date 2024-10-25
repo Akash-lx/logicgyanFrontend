@@ -1,34 +1,33 @@
 export const featuredCardContent = [
   {
     img: "featured-icon-1.png",
-    head: "Dashboard",
+    head: "Flexible Learning Options",
     contentPara: (
       <>
-        {" "}
-        Assertively parallel task synergistic
-        <br /> deliverables after high-quality
+        Learn at your own pace with online <br />
+        lectures and interactive offline classes.
       </>
     ),
   },
   {
     img: "featured-icon-1.png",
-    head: "Dashboard",
+    head: "Expert Instructors",
     contentPara: (
       <>
         {" "}
-        Assertively parallel task synergistic
-        <br /> deliverables after high-quality
+        Benefit from insights shared by industry <br />
+        professionals and experienced educators.
       </>
     ),
   },
   {
     img: "featured-icon-1.png",
-    head: "Dashboard",
+    head: "Diverse Course Selection",
     contentPara: (
       <>
         {" "}
-        Assertively parallel task synergistic
-        <br /> deliverables after high-quality
+        Explore a variety of courses to match
+        <br /> your interests and career goals.
       </>
     ),
   },
@@ -37,23 +36,23 @@ export const featuredCardContent = [
 export const featuredCardContent2 = [
   {
     img: "featured-icon-1.png",
-    head: "Dashboard",
+    head: "Easy Enrollment Process",
     contentPara: (
       <>
         {" "}
-        Assertively parallel task synergistic
-        <br /> deliverables after high-quality
+        Sign up for courses quickly and easily,
+        <br /> starting your learning journey in no time.
       </>
     ),
   },
   {
     img: "featured-icon-1.png",
-    head: "Dashboard",
+    head: "Market-Driven Skills",
     contentPara: (
       <>
         {" "}
-        Assertively parallel task synergistic
-        <br /> deliverables after high-quality
+        Acquire practical skills that are in
+        <br /> high demand in today’s job market.
       </>
     ),
   },

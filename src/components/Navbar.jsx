@@ -14,18 +14,20 @@ import NavBarDrawer from "./Drawer/NavBarDrawer";
 
 const HeadNavbar = () => {
   const [elevate, setElevate] = useState(false);
+  const [activeMenu, setActiveMenu] = useState("Home");
 
   const isMobile = useMediaQuery("(max-width:1023px)");
   const isScreen = useMediaQuery("(min-width:1023px)");
 
   const navigate = useNavigate();
 
-  const handleNavigate = (path) => {
-    if (path !== undefined || path === null) {
+  const handleNavigate = (path, title) => {
+    if (path !== undefined || path === null || path === "") {
       navigate(`/${path}`);
     } else {
       navigate(`/`);
     }
+    setActiveMenu(title);
   };
 
   // Detect scroll position and set the state accordingly
@@ -48,7 +50,7 @@ const HeadNavbar = () => {
     <AppBar
       sx={{
         backgroundColor: elevate ? "rgba(1, 38, 40, 0.75)" : "#c9eee5",
-        boxShadow: elevate ? "0px -1px 24px 9px rgba(204,170,0,0.34)" : "none", // Conditional shadow
+        boxShadow: elevate ? "0px -1px 24px -8px rgba(204,170,0,1)" : "none", // Conditional shadow
         transition: "box-shadow 0.3s ease-in-out", // Smooth transition
       }}
     >
@@ -64,7 +66,7 @@ const HeadNavbar = () => {
                   transition: "background-color 0.75s ease",
                 }}
               >
-                <img src="/logicgyan.png" alt="Logo" width="125" height="80" />
+                <img src="/logicgyan.png" alt="Logo" width="175" height="50" />
               </Box>
             ) : (
               <Box
@@ -75,7 +77,7 @@ const HeadNavbar = () => {
                   transition: "background-color 0.75s ease",
                 }}
               >
-                <img src="/logicgyan3.png" alt="Logo" width="125" height="50" />
+                <img src="/logicgyan3.png" alt="Logo" width="175" height="50" />
               </Box>
             )}
             {isMobile ? (
@@ -88,53 +90,102 @@ const HeadNavbar = () => {
           {isScreen ? (
             <Box sx={{ display: "flex", gap: 5 }}>
               <Typography
-                className="menuItem"
+                className={activeMenu === "Home" ? "" : "menuItem"}
                 fontWeight={550}
                 sx={{
-                  color: elevate ? colors.white : colors.primary.main,
+                  color:
+                    activeMenu === "Home"
+                      ? elevate
+                        ? colors.white
+                        : colors.primary.light
+                      : elevate
+                      ? colors.white
+                      : colors.primary.main,
+                  fontSize: "1.3rem",
+                  border: activeMenu === "Home" ? "1px solid" : null,
+                  borderColor: colors.secondry.main,
+                  px: 0.7,
+                  borderRadius: 1,
                   cursor: "pointer",
                 }}
                 onClick={() => {
-                  handleNavigate();
+                  handleNavigate("", "Home");
                 }}
               >
                 Home
               </Typography>
+
               <Typography
-                className="menuItem"
+                className={activeMenu === "About" ? "" : "menuItem"}
                 fontWeight={550}
                 sx={{
-                  color: elevate ? colors.white : colors.primary.main,
+                  color:
+                    activeMenu === "About"
+                      ? elevate
+                        ? colors.white
+                        : colors.primary.light
+                      : elevate
+                      ? colors.white
+                      : colors.primary.main,
+                  fontSize: "1.3rem",
+                  border: activeMenu === "About" ? "1px solid" : null,
+                  borderColor: colors.secondry.main,
+                  px: 0.7,
+                  borderRadius: 1,
                   cursor: "pointer",
                 }}
                 onClick={() => {
-                  handleNavigate("about");
+                  handleNavigate("about", "About");
                 }}
               >
                 About Us
               </Typography>
               <Typography
-                className="menuItem"
+                className={activeMenu === "Feature" ? "" : "menuItem"}
                 fontWeight={550}
                 sx={{
-                  color: elevate ? colors.white : colors.primary.main,
+                  color:
+                    activeMenu === "Feature"
+                      ? elevate
+                        ? colors.white
+                        : colors.primary.light
+                      : elevate
+                      ? colors.white
+                      : colors.primary.main,
+                  fontSize: "1.3rem",
+                  border: activeMenu === "Feature" ? "1px solid" : null,
+                  borderColor: colors.secondry.main,
+                  px: 0.7,
+                  borderRadius: 1,
                   cursor: "pointer",
                 }}
                 onClick={() => {
-                  handleNavigate("feature");
+                  handleNavigate("feature", "Feature");
                 }}
               >
                 Features
               </Typography>
               <Typography
-                className="menuItem"
+                className={activeMenu === "Blog" ? "" : "menuItem"}
                 fontWeight={550}
                 sx={{
-                  color: elevate ? colors.white : colors.primary.main,
+                  color:
+                    activeMenu === "Blog"
+                      ? elevate
+                        ? colors.white
+                        : colors.primary.light
+                      : elevate
+                      ? colors.white
+                      : colors.primary.main,
+                  fontSize: "1.3rem",
+                  border: activeMenu === "Blog" ? "1px solid" : null,
+                  borderColor: colors.secondry.main,
+                  px: 0.7,
+                  borderRadius: 1,
                   cursor: "pointer",
                 }}
                 onClick={() => {
-                  handleNavigate("blog");
+                  handleNavigate("blog", "Blog");
                 }}
               >
                 Blogs

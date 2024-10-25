@@ -41,7 +41,7 @@ const PricingSection = () => {
           />
           <Typography variant="h5">Monthly</Typography>
         </Stack>
-        <Box px={5}>
+        <Box>
           <Pricings />
         </Box>
       </Box>
