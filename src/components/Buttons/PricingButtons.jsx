@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Typography } from "@mui/material";
 import { colors } from "../../config/colorPalette";
 
-const PricingButtons = ({ title, bgColor }) => {
+const PricingButtons = ({ title, bgColor, textColor }) => {
   return (
     <Button
       sx={{
@@ -10,6 +10,7 @@ const PricingButtons = ({ title, bgColor }) => {
         py: 1,
         backgroundColor: bgColor,
         width: "85%",
+        color: textColor,
       }}
       variant="contained"
     >

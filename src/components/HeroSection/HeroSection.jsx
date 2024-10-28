@@ -36,7 +36,7 @@ const HeroSection = () => {
               // variant="h1"
               lineHeight={1}
               mb={3}
-              fontWeight={800}
+              fontWeight={750}
               color={colors.primary.main}
               sx={{ fontSize: { xs: "1.7rem", sm: "2.5rem", lg: "4rem" } }}
             >
@@ -44,16 +44,16 @@ const HeroSection = () => {
             </Typography>
             <Typography
               variant="h5"
-              lineHeight={1}
+              lineHeight={1.3}
               color="#038788"
               fontWeight={600}
             >
               Join thousands of learners and gain{" "}
-              <Typography variant="span" color="#012628">
+              <Typography variant="span" color="#012628" lineHeight={1.3}>
                 on-demand skills
               </Typography>{" "}
               with{" "}
-              <Typography variant="span" color="#012628">
+              <Typography variant="span" color="#012628" lineHeight={1.3}>
                 expert-led courses
               </Typography>{" "}
               that fit your schedule.

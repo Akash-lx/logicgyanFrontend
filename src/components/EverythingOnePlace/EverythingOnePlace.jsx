@@ -3,6 +3,9 @@ import { Box, Typography, Button, Paper } from "@mui/material";
 import { colors } from "../../config/colorPalette";
 import Grid from "@mui/material/Grid2";
 import GroupsIcon from "@mui/icons-material/Groups";
+import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
+// import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import EastIcon from "@mui/icons-material/East";
 
 const EverythingOnePlace = () => {
   return (
@@ -81,82 +84,172 @@ const EverythingOnePlace = () => {
             </Box>
             <Box px={2}>
               <Box
-                p={3}
-                bgcolor="rgba(1, 38, 40, 0.493)"
-                borderRadius={2}
-                mb={3}
-                color="white"
-                border="1px solid black"
                 sx={{
-                  transition: "transform 0.2s ease", // Smooth transition for the levitation
+                  cursor: "pointer",
+                  transition: "transform 0.3s ease-in", // Smooth transition for the levitation
                   "&:hover": {
-                    transform: "translateY(-3px)", // Move the card up by 4px on hover
+                    transform: "translateY(-5px)", // Move the card up by 4px on hover
                   },
                 }}
-                data-aos="fade-up"
-                data-aos-duration="1000"
               >
-                <Typography variant="h6">
-                  Comprehensive Course Library
-                </Typography>
+                <Box
+                  px={3}
+                  py={1.5}
+                  bgcolor="#fbce66"
+                  borderRadius={2}
+                  mb={3}
+                  color="white"
+                  sx={{
+                    boxShadow: "-2px 9px 13px -6px rgba(0,0,0,0.75)",
+                  }}
+                  data-aos="fade-up"
+                  data-aos-duration="1600"
+                  display="flex"
+                  alignItems="center"
+                  justifyContent="space-between"
+                >
+                  <Box display="flex" alignItems="center">
+                    <FiberManualRecordIcon
+                      fontSize="xs"
+                      sx={{ color: colors.primary.main }}
+                    />
+                    <Typography
+                      fontSize="1.5rem"
+                      color={colors.primary.dark}
+                      fontWeight={550}
+                      ml={1}
+                    >
+                      Comprehensive Course Library
+                    </Typography>
+                  </Box>
+                  <EastIcon sx={{ color: colors.primary.main }} />
+                </Box>
               </Box>
               <Box
-                p={3}
-                bgcolor="rgba(1, 38, 40, 0.493)"
-                borderRadius={2}
-                mb={3}
-                color="white"
-                border="1px solid black"
                 sx={{
-                  transition: "transform 0.2s ease", // Smooth transition for the levitation
+                  cursor: "pointer",
+                  transition: "transform 0.3s ease-in", // Smooth transition for the levitation
                   "&:hover": {
-                    transform: "translateY(-3px)", // Move the card up by 4px on hover
+                    transform: "translateY(-5px)", // Move the card up by 4px on hover
                   },
                 }}
-                data-aos="fade-up"
-                data-aos-duration="1200"
               >
-                <Typography variant="h6">Integrated Learning Tools</Typography>
+                <Box
+                  px={3}
+                  py={1.5}
+                  bgcolor="#37e0f5"
+                  borderRadius={2}
+                  mb={3}
+                  color="white"
+                  sx={{
+                    boxShadow: "-2px 9px 13px -6px rgba(0,0,0,0.75)",
+                  }}
+                  data-aos="fade-up"
+                  data-aos-duration="1600"
+                  display="flex"
+                  alignItems="center"
+                  justifyContent="space-between"
+                >
+                  <Box display="flex" alignItems="center">
+                    <FiberManualRecordIcon
+                      fontSize="xs"
+                      sx={{ color: colors.primary.main }}
+                    />
+                    <Typography
+                      ml={1}
+                      fontSize="1.5rem"
+                      color={colors.primary.dark}
+                      fontWeight={550}
+                    >
+                      Integrated Learning Tools
+                    </Typography>
+                  </Box>
+                  <EastIcon sx={{ color: colors.primary.main }} />
+                </Box>
               </Box>
               <Box
-                p={3}
-                bgcolor="rgba(1, 38, 40, 0.493)"
-                borderRadius={2}
-                mb={3}
-                color="white"
-                border="1px solid black"
                 sx={{
-                  transition: "transform 0.2s ease", // Smooth transition for the levitation
+                  cursor: "pointer",
+                  transition: "transform 0.3s ease-in", // Smooth transition for the levitation
                   "&:hover": {
-                    transform: "translateY(-3px)", // Move the card up by 4px on hover
+                    transform: "translateY(-5px)", // Move the card up by 4px on hover
                   },
                 }}
-                data-aos="fade-up"
-                data-aos-duration="1400"
               >
-                <Typography variant="h6">
-                  Seamless Offline and Online Access
-                </Typography>
+                <Box
+                  px={3}
+                  py={1.5}
+                  bgcolor="#fbce66"
+                  borderRadius={2}
+                  mb={3}
+                  color="white"
+                  sx={{
+                    boxShadow: "-2px 9px 13px -6px rgba(0,0,0,0.75)",
+                  }}
+                  data-aos="fade-up"
+                  data-aos-duration="1600"
+                  display="flex"
+                  alignItems="center"
+                  justifyContent="space-between"
+                >
+                  <Box display="flex" alignItems="center">
+                    <FiberManualRecordIcon
+                      fontSize="xs"
+                      sx={{ color: colors.primary.main }}
+                    />
+                    <Typography
+                      ml={1}
+                      fontSize="1.5rem"
+                      color={colors.primary.dark}
+                      fontWeight={550}
+                    >
+                      Seamless Offline and Online Access
+                    </Typography>
+                  </Box>
+                  <EastIcon sx={{ color: colors.primary.main }} />
+                </Box>
               </Box>
               <Box
-                p={3}
-                bgcolor="rgba(1, 38, 40, 0.493)"
-                borderRadius={2}
-                mb={3}
-                color="white"
-                border="1px solid black"
                 sx={{
-                  transition: "transform 0.2s ease", // Smooth transition for the levitation
+                  cursor: "pointer",
+                  transition: "transform 0.3s ease-in", // Smooth transition for the levitation
                   "&:hover": {
-                    transform: "translateY(-3px)", // Move the card up by 4px on hover
+                    transform: "translateY(-5px)", // Move the card up by 4px on hover
                   },
                 }}
-                data-aos="fade-up"
-                data-aos-duration="1600"
               >
-                <Typography variant="h6">
-                  Personalized Learning Experience
-                </Typography>
+                <Box
+                  px={3}
+                  py={1.5}
+                  bgcolor="#37e0f5"
+                  borderRadius={2}
+                  mb={3}
+                  color="white"
+                  sx={{
+                    boxShadow: "-2px 9px 13px -6px rgba(0,0,0,0.75)",
+                  }}
+                  data-aos="fade-up"
+                  data-aos-duration="1600"
+                  display="flex"
+                  alignItems="center"
+                  justifyContent="space-between"
+                >
+                  <Box display="flex" alignItems="center">
+                    <FiberManualRecordIcon
+                      fontSize="xs"
+                      sx={{ color: colors.primary.main }}
+                    />
+                    <Typography
+                      fontSize="1.5rem"
+                      ml={1}
+                      color={colors.primary.xdark}
+                      fontWeight={550}
+                    >
+                      Personalized Learning Experience
+                    </Typography>
+                  </Box>
+                  <EastIcon sx={{ color: colors.primary.main }} />
+                </Box>
               </Box>
             </Box>
           </Grid>

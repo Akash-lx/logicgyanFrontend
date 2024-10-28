@@ -6,7 +6,7 @@ const PrimaryButton = ({ title, btnFunction }) => {
   return (
     <Button
       variant="contained"
-      sx={{ backgroundColor: colors.secondry.main }}
+      sx={{ backgroundColor: colors.secondry.main, color: colors.primary.dark }}
       onClick={() => {
         btnFunction("contactUs", "Contact");
       }}

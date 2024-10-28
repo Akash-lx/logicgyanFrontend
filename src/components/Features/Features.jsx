@@ -68,7 +68,7 @@ const cardContent = (data) => (
       />
     </Box>
     <Box>
-      <Typography variant="h6" mb={3} fontWeight={550}>
+      <Typography variant="h6" mb={3} fontWeight={550} lineHeight={1}>
         {data.head}
       </Typography>
       <Typography variant="body2" color="#5a7184" fontWeight={550}>

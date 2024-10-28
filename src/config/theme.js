@@ -3,7 +3,8 @@ import { createTheme } from "@mui/material/styles";
 // Create a custom theme with line-height for all headings
 const theme = createTheme({
   typography: {
-    fontFamily: `'DM Sans', sans-serif`, // Apply DM Sans globally
+    // fontFamily: `'DM Sans', sans-serif`,
+    fontFamily: ` 'Martel Sans', serif`,
 
     h1: {
       fontSize: "2rem",

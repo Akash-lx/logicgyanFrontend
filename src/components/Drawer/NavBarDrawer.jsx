@@ -21,10 +21,8 @@ export default function NavBarDrawer() {
   const navigate = useNavigate();
 
   const handleNavigate = (path) => {
-    if (path !== undefined || path === null) {
+    if (path !== undefined || path === null || path === "") {
       navigate(`/${path}`);
-    } else {
-      navigate(`/`);
     }
   };
 

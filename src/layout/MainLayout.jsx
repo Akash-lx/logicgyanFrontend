@@ -3,8 +3,10 @@ import React from "react";
 import HeadNavbar from "../components/Navbar";
 import Footer from "../components/Footer/Footer";
 import { Outlet } from "react-router-dom";
+import { useState } from "react";
 
 const MainLayout = () => {
+  // const [activeMenu, setActiveMenu] = useState("Home");
   return (
     <Box width="100%">
       <Box width="100%">
