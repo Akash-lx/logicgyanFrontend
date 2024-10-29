@@ -15,6 +15,7 @@
     "@lottiefiles/dotlottie-react": "^0.9.1",
     "@mui/icons-material": "^6.1.4",
     "@mui/material": "^6.1.4",
+    "animate.css": "^4.1.1",
     "aos": "^2.3.4",
     "logicmitra-frontend": "file:",
     "react": "^18.3.1",

@@ -49,7 +49,9 @@ const HeadNavbar = () => {
   return (
     <AppBar
       sx={{
-        backgroundColor: elevate ? "rgba(1, 38, 40, 0.75)" : "#c9eee5",
+        backgroundColor: elevate
+          ? "rgba(1, 38, 40, 0.75)"
+          : "rgba(255, 255, 255, 0)",
         boxShadow: elevate ? "0px -1px 24px -8px rgba(204,170,0,1)" : "none", // Conditional shadow
         transition: "box-shadow 0.3s ease-in-out", // Smooth transition
       }}
