@@ -3,8 +3,7 @@ import { createTheme } from "@mui/material/styles";
 // Create a custom theme with line-height for all headings
 const theme = createTheme({
   typography: {
-    fontFamily: `'DM Sans', sans-serif`, // Apply DM Sans globally
-
+    fontFamily: ` 'Martel Sans', serif`,
     h1: {
       fontSize: "2rem",
       lineHeight: 1.2, // Line-height for h1
@@ -33,7 +32,7 @@ const theme = createTheme({
     },
     h3: {
       fontSize: "1.5rem",
-      lineHeight: 0.8, // Line-height for h3
+      lineHeight: 1, // Line-height for h3
       "@media (min-width:600px)": {
         fontSize: "2rem",
       },
@@ -46,7 +45,7 @@ const theme = createTheme({
     },
     h4: {
       fontSize: "1.25rem",
-      lineHeight: 0.8, // Line-height for h4
+      lineHeight: 1, // Line-height for h4
       "@media (min-width:600px)": {
         fontSize: "1.75rem",
       },
@@ -59,7 +58,7 @@ const theme = createTheme({
     },
     h5: {
       fontSize: "1rem",
-      lineHeight: 0.7, // Line-height for h5
+      lineHeight: 1, // Line-height for h5
       "@media (min-width:600px)": {
         fontSize: "1.5rem",
       },
@@ -72,7 +71,7 @@ const theme = createTheme({
     },
     h6: {
       fontSize: "0.875rem",
-      lineHeight: 0.7, // Line-height for h6
+      lineHeight: 1, // Line-height for h6
       "@media (min-width:600px)": {
         fontSize: "1.25rem",
       },

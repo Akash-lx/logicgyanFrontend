@@ -9,7 +9,10 @@ const Pricings = () => {
   return (
     <Box>
       <Grid container>
-        <Grid size={{ xs: 12, md: 4 }} justifyItems="end">
+        <Grid
+          size={{ xs: 12, md: 4 }}
+          justifyItems={{ xs: "center", lg: "end" }}
+        >
           <Box
             sx={{
               borderRadius: 3,
@@ -130,11 +133,16 @@ const Pricings = () => {
               <PricingButtons
                 title="Try for Free"
                 bgColor={colors.secondry.main}
+                textColor={colors.primary.dark}
               />
             </Box>
           </Box>
         </Grid>
-        <Grid size={{ xs: 12, md: 4 }} px={2} justifyItems="start">
+        <Grid
+          size={{ xs: 12, md: 4 }}
+          px={2}
+          justifyItems={{ xs: "center", lg: "start" }}
+        >
           <Box
             sx={{
               borderRadius: 3,

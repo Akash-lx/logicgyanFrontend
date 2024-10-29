@@ -102,8 +102,8 @@ const HeadNavbar = () => {
                       ? colors.white
                       : colors.primary.main,
                   fontSize: "1.3rem",
-                  border: activeMenu === "Home" ? "1px solid" : null,
-                  borderColor: colors.secondry.main,
+                  border: activeMenu === "Home" ? "2px solid" : null,
+                  borderColor: colors.secondry.dark,
                   px: 0.7,
                   borderRadius: 1,
                   cursor: "pointer",
@@ -128,8 +128,8 @@ const HeadNavbar = () => {
                       ? colors.white
                       : colors.primary.main,
                   fontSize: "1.3rem",
-                  border: activeMenu === "About" ? "1px solid" : null,
-                  borderColor: colors.secondry.main,
+                  border: activeMenu === "About" ? "2px solid" : null,
+                  borderColor: colors.secondry.dark,
                   px: 0.7,
                   borderRadius: 1,
                   cursor: "pointer",
@@ -153,8 +153,8 @@ const HeadNavbar = () => {
                       ? colors.white
                       : colors.primary.main,
                   fontSize: "1.3rem",
-                  border: activeMenu === "Feature" ? "1px solid" : null,
-                  borderColor: colors.secondry.main,
+                  border: activeMenu === "Feature" ? "2px solid" : null,
+                  borderColor: colors.secondry.dark,
                   px: 0.7,
                   borderRadius: 1,
                   cursor: "pointer",
@@ -178,8 +178,8 @@ const HeadNavbar = () => {
                       ? colors.white
                       : colors.primary.main,
                   fontSize: "1.3rem",
-                  border: activeMenu === "Blog" ? "1px solid" : null,
-                  borderColor: colors.secondry.main,
+                  border: activeMenu === "Blog" ? "2px solid" : null,
+                  borderColor: colors.secondry.dark,
                   px: 0.7,
                   borderRadius: 1,
                   cursor: "pointer",

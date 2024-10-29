@@ -22,7 +22,7 @@ const LatestWork = () => {
         </Typography>
       </Box>
       <Box px={{ xs: 5, sm: 10 }} py={10}>
-        <Grid container spacing={5}>
+        <Grid container spacing={3}>
           <Grid size={{ xs: 12, sm: 6, md: 4 }}>
             <WorkCards />
           </Grid>

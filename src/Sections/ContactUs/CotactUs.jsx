@@ -29,6 +29,11 @@ const CotactUs = () => {
                     className="contactusInput"
                     placeholder="Enter your email"
                   />
+                  <input
+                    type="number"
+                    className="contactusInput"
+                    placeholder="Enter your phoen number"
+                  />
                   <textarea
                     className="contactusTextArea"
                     placeholder="Write your message..."
@@ -50,6 +55,7 @@ const CotactUs = () => {
                       sx={{
                         px: 5,
                         py: 2,
+                        color: colors.primary.dark,
                         bgcolor: colors.secondry.main,
                         ":hover": {
                           backgroundColor: colors.primary.light,

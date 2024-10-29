@@ -10,6 +10,10 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { colors } from "../../config/colorPalette";
 import "./footer.css";
 import { useNavigate } from "react-router-dom";
+import CallIcon from "@mui/icons-material/Call";
+import EmailIcon from "@mui/icons-material/Email";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import CropLandscapeIcon from "@mui/icons-material/CropLandscape";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -32,19 +36,34 @@ const Footer = () => {
               technology.
             </Typography>
             <Box mb={2}>
-              <IconButton size="large">
+              <IconButton
+                size="large"
+                sx={{ "&:hover": { backgroundColor: colors.primary.xxlight } }}
+              >
                 <LinkedInIcon fontSize="inherit" />
               </IconButton>
-              <IconButton size="large">
+              <IconButton
+                size="large"
+                sx={{ "&:hover": { backgroundColor: colors.primary.xxlight } }}
+              >
                 <InstagramIcon fontSize="inherit" />
               </IconButton>
-              <IconButton size="large">
+              <IconButton
+                size="large"
+                sx={{ "&:hover": { backgroundColor: colors.primary.xxlight } }}
+              >
                 <FacebookIcon fontSize="inherit" />
               </IconButton>
-              <IconButton size="large">
+              <IconButton
+                size="large"
+                sx={{ "&:hover": { backgroundColor: colors.primary.xxlight } }}
+              >
                 <XIcon fontSize="inherit" />
               </IconButton>
-              <IconButton size="large">
+              <IconButton
+                size="large"
+                sx={{ "&:hover": { backgroundColor: colors.primary.xxlight } }}
+              >
                 <WhatsAppIcon fontSize="inherit" />
               </IconButton>
             </Box>
@@ -82,8 +101,13 @@ const Footer = () => {
           </Box>
         </Grid>
         <Grid size={{ xs: 6, md: 2 }} py={2}>
-          <Box mb={3}>
-            <Typography variant="h6" fontWeight={600}>
+          <Box mb={3} display="flex">
+            <Typography
+              variant="h6"
+              fontWeight={600}
+              borderBottom="3px solid"
+              borderColor={colors.secondry.dark}
+            >
               Features
             </Typography>
           </Box>
@@ -91,21 +115,24 @@ const Footer = () => {
             <ul className="footerList">
               <li className="footerListItem">
                 <Typography variant="body1" className="listItemContent">
-                  Documentation
+                  <CropLandscapeIcon /> Documentation
                 </Typography>
               </li>
               <li className="footerListItem">
                 <Typography variant="body1" className="listItemContent">
+                  <CropLandscapeIcon />
                   Design
                 </Typography>
               </li>
               <li className="footerListItem">
                 <Typography variant="body1" className="listItemContent">
+                  <CropLandscapeIcon />
                   Themes
                 </Typography>
               </li>
               <li className="footerListItem">
                 <Typography variant="body1" className="listItemContent">
+                  <CropLandscapeIcon />
                   Illustrations
                 </Typography>
               </li>
@@ -113,8 +140,13 @@ const Footer = () => {
           </Box>
         </Grid>
         <Grid size={{ xs: 6, md: 2 }} py={2}>
-          <Box mb={3}>
-            <Typography variant="h6" fontWeight={600}>
+          <Box mb={3} display="flex">
+            <Typography
+              variant="h6"
+              fontWeight={600}
+              borderBottom="3px solid"
+              borderColor={colors.secondry.dark}
+            >
               Community
             </Typography>
           </Box>
@@ -122,21 +154,25 @@ const Footer = () => {
             <ul className="footerList">
               <li className="footerListItem">
                 <Typography variant="body1" className="listItemContent">
+                  <CropLandscapeIcon />
                   About
                 </Typography>
               </li>
               <li className="footerListItem">
                 <Typography variant="body1" className="listItemContent">
+                  <CropLandscapeIcon />
                   Terms
                 </Typography>
               </li>
               <li className="footerListItem">
                 <Typography variant="body1" className="listItemContent">
+                  <CropLandscapeIcon />
                   Privacy Policy
                 </Typography>
               </li>
               <li className="footerListItem">
                 <Typography variant="body1" className="listItemContent">
+                  <CropLandscapeIcon />
                   Careers
                 </Typography>
               </li>
@@ -144,8 +180,13 @@ const Footer = () => {
           </Box>
         </Grid>
         <Grid size={{ xs: 6, md: 2 }} py={2}>
-          <Box mb={3}>
-            <Typography variant="h6" fontWeight={600}>
+          <Box mb={3} display="flex">
+            <Typography
+              variant="h6"
+              fontWeight={600}
+              borderBottom="3px solid"
+              borderColor={colors.secondry.dark}
+            >
               Job Info
             </Typography>
           </Box>
@@ -153,16 +194,19 @@ const Footer = () => {
             <ul className="footerList">
               <li className="footerListItem">
                 <Typography variant="body1" className="listItemContent">
+                  <CropLandscapeIcon />
                   Select
                 </Typography>
               </li>
               <li className="footerListItem">
                 <Typography variant="body1" className="listItemContent">
+                  <CropLandscapeIcon />
                   Service
                 </Typography>
               </li>
               <li className="footerListItem">
                 <Typography variant="body1" className="listItemContent">
+                  <CropLandscapeIcon />
                   Payment
                 </Typography>
               </li>
@@ -170,27 +214,35 @@ const Footer = () => {
           </Box>
         </Grid>
         <Grid size={{ xs: 12, sm: 6, md: 3, lg: 2 }} py={2}>
-          <Box mb={3}>
-            <Typography variant="h6" fontWeight={600}>
+          <Box mb={3} display="flex">
+            <Typography
+              variant="h6"
+              fontWeight={600}
+              borderBottom="3px solid"
+              borderColor={colors.secondry.dark}
+            >
               Contact
             </Typography>
           </Box>
           <Box>
             <ul className="footerList">
               <li className="footerListItem" style={{ display: "flex" }}>
-                <Typography color="black" mr={0.5}>
+                <CallIcon sx={{ color: colors.primary.light }} />
+                <Typography color="black" mr={0.5} ml={0.5}>
                   Call :{" "}
                 </Typography>
                 <Typography variant="body1">+91-9715546963</Typography>
               </li>
               <li className="footerListItem" style={{ display: "flex" }}>
-                <Typography color="black" mr={0.5}>
+                <EmailIcon sx={{ color: colors.primary.light }} />
+                <Typography color="black" mr={0.5} ml={0.5}>
                   Email :{" "}
                 </Typography>
                 <Typography variant="body1">admin@gmail.com</Typography>
               </li>
               <li className="footerListItem" style={{ display: "flex" }}>
-                <Typography color="black" mr={0.5}>
+                <LocationOnIcon sx={{ color: colors.primary.light }} />
+                <Typography color="black" mr={0.5} ml={0.5}>
                   Address :{" "}
                 </Typography>
                 <Typography variant="body1">Bhilai</Typography>

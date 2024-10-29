@@ -6,6 +6,7 @@ import IntricateYourApps from "../../components/IntricateYourApps";
 import CollaborateSection from "../../components/CollaborateSection/CollaborateSection";
 import FreeTrailSection from "../../components/FreeTrailSection/FreeTrailSection";
 import EverythingOnePlace from "../../components/EverythingOnePlace/EverythingOnePlace";
+import ImgBanner from "../../components/Banner/ImgBanner";
 
 const HomeSection = () => {
   return (
@@ -16,7 +17,7 @@ const HomeSection = () => {
       <CollaborateSection />
       <IntricateYourApps />
       <PricingSection />
-      <FreeTrailSection />
+      <ImgBanner />
     </>
   );
 };
