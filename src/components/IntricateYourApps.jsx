@@ -13,6 +13,7 @@ const IntricateYourApps = () => {
           lineHeight={1.2}
           textAlign="center"
           mb={5}
+          color={colors.primary.main}
         >
           Easy to Intricate <br />
           <Typography component="span" variant="h3" fontWeight={600}>
@@ -33,7 +34,7 @@ const IntricateYourApps = () => {
               sx={{
                 transition: "transform 0.5s ease", // Smooth transition for the levitation
                 "&:hover": {
-                  backgroundColor: "#ccaa00",
+                  backgroundColor: colors.secondry.main,
                   boxShadow: " 0px 0px 18px 19px rgba(204,170,0,0.17)",
                   transform: "translateY(-2px)", // Move the card up by 4px on hover
                 },
@@ -55,7 +56,7 @@ const IntricateYourApps = () => {
               sx={{
                 transition: "transform 0.5s ease", // Smooth transition for the levitation
                 "&:hover": {
-                  backgroundColor: "#ccaa00",
+                  backgroundColor: colors.secondry.main,
                   boxShadow: " 0px 0px 18px 19px rgba(204,170,0,0.17)",
                   transform: "translateY(-2px)", // Move the card up by 4px on hover
                 },
@@ -77,7 +78,7 @@ const IntricateYourApps = () => {
               sx={{
                 transition: "transform 0.5s ease", // Smooth transition for the levitation
                 "&:hover": {
-                  backgroundColor: "#ccaa00",
+                  backgroundColor: colors.secondry.main,
                   boxShadow: " 0px 0px 18px 19px rgba(204,170,0,0.17)",
                   transform: "translateY(-2px)", // Move the card up by 4px on hover
                 },
@@ -99,7 +100,7 @@ const IntricateYourApps = () => {
               sx={{
                 transition: "transform 0.5s ease", // Smooth transition for the levitation
                 "&:hover": {
-                  backgroundColor: "#ccaa00",
+                  backgroundColor: colors.secondry.main,
                   boxShadow: " 0px 0px 18px 19px rgba(204,170,0,0.17)",
                   transform: "translateY(-2px)", // Move the card up by 4px on hover
                 },
@@ -121,7 +122,7 @@ const IntricateYourApps = () => {
               sx={{
                 transition: "transform 0.5s ease", // Smooth transition for the levitation
                 "&:hover": {
-                  backgroundColor: "#ccaa00",
+                  backgroundColor: colors.secondry.main,
                   boxShadow: " 0px 0px 18px 19px rgba(204,170,0,0.17)",
                   transform: "translateY(-2px)", // Move the card up by 4px on hover
                 },
@@ -143,7 +144,7 @@ const IntricateYourApps = () => {
               sx={{
                 transition: "transform 0.5s ease", // Smooth transition for the levitation
                 "&:hover": {
-                  backgroundColor: "#ccaa00",
+                  backgroundColor: colors.secondry.main,
                   boxShadow: " 0px 0px 18px 19px rgba(204,170,0,0.17)",
                   transform: "translateY(-2px)", // Move the card up by 4px on hover
                 },

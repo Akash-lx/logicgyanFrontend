@@ -17,7 +17,12 @@ const BlogHeroSection = () => {
       mb={10}
     >
       <Box pt={10}>
-        <Typography variant="h1" fontWeight={700} textAlign="center">
+        <Typography
+          variant="h1"
+          fontWeight={700}
+          textAlign="center"
+          color={colors.primary.main}
+        >
           Blog
         </Typography>
         <Typography variant="body1" fontWeight={700} textAlign="center">

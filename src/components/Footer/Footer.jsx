@@ -107,6 +107,7 @@ const Footer = () => {
               fontWeight={600}
               borderBottom="3px solid"
               borderColor={colors.secondry.dark}
+              color={colors.primary.light}
             >
               Features
             </Typography>
@@ -146,6 +147,7 @@ const Footer = () => {
               fontWeight={600}
               borderBottom="3px solid"
               borderColor={colors.secondry.dark}
+              color={colors.primary.light}
             >
               Community
             </Typography>
@@ -186,6 +188,7 @@ const Footer = () => {
               fontWeight={600}
               borderBottom="3px solid"
               borderColor={colors.secondry.dark}
+              color={colors.primary.light}
             >
               Job Info
             </Typography>
@@ -220,6 +223,7 @@ const Footer = () => {
               fontWeight={600}
               borderBottom="3px solid"
               borderColor={colors.secondry.dark}
+              color={colors.primary.light}
             >
               Contact
             </Typography>

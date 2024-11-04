@@ -18,6 +18,7 @@ export const colors = {
     xxdark: "#04775A",
   },
   secondry: {
+    highlited: "#f1a617",
     xxLight: "#FFF5C2",
     xlight: "#FFEB85",
     light: "#FFE047",

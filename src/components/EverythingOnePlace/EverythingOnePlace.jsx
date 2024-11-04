@@ -78,7 +78,12 @@ const EverythingOnePlace = () => {
           </Grid>
           <Grid size={{ sm: 12, md: 6 }} py={5} px={5}>
             <Box data-aos="fade-down" data-aos-duration="700">
-              <Typography variant="h1" fontWeight={600} mb={3}>
+              <Typography
+                variant="h1"
+                fontWeight={600}
+                mb={3}
+                color={colors.primary.main}
+              >
                 Everything you need in one place
               </Typography>
             </Box>

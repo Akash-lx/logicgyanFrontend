@@ -79,7 +79,7 @@ const HeadNavbar = () => {
                   transition: "background-color 0.75s ease",
                 }}
               >
-                <img src="/logicgyan3.png" alt="Logo" width="175" height="50" />
+                <img src="/logicgyan6.png" alt="Logo" width="175" height="50" />
               </Box>
             )}
             {isMobile ? (
@@ -98,16 +98,14 @@ const HeadNavbar = () => {
                   color:
                     activeMenu === "Home"
                       ? elevate
-                        ? colors.white
-                        : colors.primary.light
+                        ? colors.secondry.highlited
+                        : colors.primary.main
                       : elevate
                       ? colors.white
                       : colors.primary.main,
                   fontSize: "1.3rem",
-                  border: activeMenu === "Home" ? "2px solid" : null,
-                  borderColor: colors.secondry.dark,
-                  px: 0.7,
-                  borderRadius: 1,
+                  borderBottom: activeMenu === "Home" ? "2px solid" : "",
+                  px: 0.5,
                   cursor: "pointer",
                 }}
                 onClick={() => {
@@ -124,16 +122,15 @@ const HeadNavbar = () => {
                   color:
                     activeMenu === "About"
                       ? elevate
-                        ? colors.white
-                        : colors.primary.light
+                        ? colors.secondry.highlited
+                        : colors.primary.main
                       : elevate
                       ? colors.white
                       : colors.primary.main,
                   fontSize: "1.3rem",
-                  border: activeMenu === "About" ? "2px solid" : null,
-                  borderColor: colors.secondry.dark,
-                  px: 0.7,
-                  borderRadius: 1,
+                  borderBottom: activeMenu === "About" ? "2px solid" : "",
+                  px: 0.5,
+
                   cursor: "pointer",
                 }}
                 onClick={() => {
@@ -149,16 +146,15 @@ const HeadNavbar = () => {
                   color:
                     activeMenu === "Feature"
                       ? elevate
-                        ? colors.white
-                        : colors.primary.light
+                        ? colors.secondry.highlited
+                        : colors.primary.main
                       : elevate
                       ? colors.white
                       : colors.primary.main,
                   fontSize: "1.3rem",
-                  border: activeMenu === "Feature" ? "2px solid" : null,
-                  borderColor: colors.secondry.dark,
-                  px: 0.7,
-                  borderRadius: 1,
+                  borderBottom: activeMenu === "Feature" ? "2px solid" : "",
+                  px: 0.5,
+
                   cursor: "pointer",
                 }}
                 onClick={() => {
@@ -174,16 +170,15 @@ const HeadNavbar = () => {
                   color:
                     activeMenu === "Blog"
                       ? elevate
-                        ? colors.white
-                        : colors.primary.light
+                        ? colors.secondry.highlited
+                        : colors.primary.main
                       : elevate
                       ? colors.white
                       : colors.primary.main,
                   fontSize: "1.3rem",
-                  border: activeMenu === "Blog" ? "2px solid" : null,
-                  borderColor: colors.secondry.dark,
-                  px: 0.7,
-                  borderRadius: 1,
+                  borderBottom: activeMenu === "Blog" ? "2px solid" : "",
+                  px: 0.5,
+
                   cursor: "pointer",
                 }}
                 onClick={() => {

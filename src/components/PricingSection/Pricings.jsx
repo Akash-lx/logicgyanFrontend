@@ -132,7 +132,7 @@ const Pricings = () => {
             <Box textAlign="center">
               <PricingButtons
                 title="Try for Free"
-                bgColor={colors.secondry.main}
+                bgColor={colors.secondry.highlited}
                 textColor={colors.primary.dark}
               />
             </Box>

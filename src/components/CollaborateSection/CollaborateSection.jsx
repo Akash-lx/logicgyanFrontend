@@ -12,7 +12,12 @@ const CollaborateSection = () => {
       <Grid container spacing={2}>
         <Grid size={{ sm: 12, md: 6 }}>
           <Box py={5} px={5}>
-            <Typography variant="h1" fontWeight={600} mb={3}>
+            <Typography
+              variant="h1"
+              fontWeight={600}
+              mb={3}
+              color={colors.primary.main}
+            >
               Collaborate with your team anytime, anywhere.
             </Typography>
             <Typography variant="body1" fontWeight={550} color="#5a7184">

@@ -5,7 +5,7 @@ import { colors } from "../../config/colorPalette";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const HeroSection = () => {
-  // const isTab = useMediaQuery("(min-width:786px)")
+  // const isTab = useMediaQuery("(min-width:786px)");
   return (
     <Box
       className="mainContainer"
@@ -36,21 +36,27 @@ const HeroSection = () => {
       <Grid container>
         <Grid size={{ sm: 12, md: 6 }}>
           <Box
-            pt={10}
+            mb={{ sm: 10, md: 0 }}
+            pt={{ xs: 5, lg: 10 }}
             px={{ xs: 5, sm: 0 }}
             pl={{ sm: 15 }}
             position="relative"
           >
             <Box position="absolute" top={5}>
               <Typography
-                fontSize="7rem"
+                fontSize={{ xs: "4rem", sm: "5rem", md: "6rem", lg: "7rem" }}
                 fontWeight={700}
                 color="rgba(3, 99, 75, 0.1)"
               >
                 LogicGyan
               </Typography>
             </Box>
-            <Box zIndex={2} className="animate__animated animate__backInDown">
+
+            <Box
+              zIndex={2}
+              className="animate__animated animate__backInDown"
+              style={{ animationDuration: "1.7" }}
+            >
               <Typography
                 // variant="h1"
                 lineHeight={1}
@@ -60,7 +66,7 @@ const HeroSection = () => {
                 sx={{ fontSize: { xs: "1.7rem", sm: "2.5rem", lg: "3.2rem" } }}
               >
                 Unlock Your Potential with{" "}
-                <Typography variant="span" color="#f02424">
+                <Typography variant="span" color={colors.secondry.highlited}>
                   LogicGyan
                 </Typography>
               </Typography>
@@ -73,11 +79,19 @@ const HeroSection = () => {
                 mb={5}
               >
                 Join thousands of learners and gain{" "}
-                <Typography variant="span" color="#f02424" fontSize="1.4rem">
+                <Typography
+                  variant="span"
+                  color={colors.secondry.highlited}
+                  fontSize="1.4rem"
+                >
                   on-demand skills
                 </Typography>{" "}
                 with{" "}
-                <Typography variant="span" color="#f02424" fontSize="1.4rem">
+                <Typography
+                  variant="span"
+                  color={colors.secondry.highlited}
+                  fontSize="1.4rem"
+                >
                   expert-led courses
                 </Typography>{" "}
                 that fit your schedule.
@@ -85,9 +99,10 @@ const HeroSection = () => {
             </Box>
             <Box
               component={Stack}
-              direction="row"
+              direction={{ xs: "column", sm: "row" }}
               spacing={3}
               className="animate__animated animate__backInLeft"
+              style={{ animationDuration: "2s" }}
             >
               <Button
                 variant="contained"
@@ -122,12 +137,12 @@ const HeroSection = () => {
                 variant="contained"
                 sx={{
                   py: 1,
-                  px: 2,
+                  pr: 4,
                   backgroundColor: colors.white,
                   color: colors.primary.main,
                   borderRadius: 10,
                   display: "flex",
-                  justifyContent: "space-between",
+                  justifyContent: "center",
                   alignItems: "center",
                   transition: "transform all 1s ease-in",
                   "&:hover": {
@@ -161,14 +176,26 @@ const HeroSection = () => {
             p={3}
             position="relative"
             className="animate__animated animate__backInUp"
+            style={{ animationDuration: "3s" }}
           >
-            <Box position="absolute" left={50} className="heroRocketAnimation">
-              <img src="/cloud.png" width="65%" />
+            <Box
+              position="absolute"
+              left={50}
+              width="15%"
+              className="heroRocketAnimation"
+            >
+              <img src="/cloud.png" width="100%" />
             </Box>
-            <Box position="absolute" right={20} className="heroRocketAnimation">
-              <img src="/rocket.png" width="65%" />
+            <Box
+              pr={10}
+              position="absolute"
+              width={{ xs: "32%", sm: "25%", md: "30%" }}
+              right={1}
+              className="heroRocketAnimation"
+            >
+              <img src="/rocket.png" width="100%" />
             </Box>
-            <Box p={3} width="75%" margin="auto">
+            <Box p={3} width={{ xs: "65%", sm: "75%" }} margin="auto">
               <img
                 src="/herosecmainmirror.png"
                 alt="Logo"

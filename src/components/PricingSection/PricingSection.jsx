@@ -2,11 +2,19 @@ import React from "react";
 import Switch from "@mui/material/Switch";
 import { Box, Stack, Typography } from "@mui/material";
 import Pricings from "./Pricings";
+import { colors } from "../../config/colorPalette";
+
 const PricingSection = () => {
   return (
     <Box bgcolor="#e5fff9">
       <Box py={5}>
-        <Typography variant="h3" mb={5} fontWeight={600} textAlign="center">
+        <Typography
+          variant="h3"
+          mb={5}
+          fontWeight={600}
+          textAlign="center"
+          color={colors.primary.main}
+        >
           Affordable Pricing
         </Typography>
         <Stack
