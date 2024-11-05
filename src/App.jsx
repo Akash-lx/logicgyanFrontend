@@ -13,6 +13,8 @@ import TermsAndCondition from "./Sections/TermsPrivacy/TermsAndCondition";
 import RefundAndPolicy from "./Sections/TermsPrivacy/RefundAndPolicy";
 import PrivacyAndPolicy from "./Sections/TermsPrivacy/PrivacyAndPolicy";
 import TermsLayout from "./layout/TermsLayout";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   useEffect(() => {
@@ -22,20 +24,23 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      <Routes>
-        <Route element={<MainLayout />}>
-          <Route path="/" element={<HomeSection />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/contactUs" element={<CotactUs />} />
-          <Route path="/feature" element={<Feature />} />
-          <Route path="/TermsAndCondition" element={<TermsAndCondition />} />
-          <Route path="/RefundAndPolicy" element={<RefundAndPolicy />} />
-          <Route path="/PrivacyAndPolicy" element={<PrivacyAndPolicy />} />
-        </Route>
-      </Routes>
-    </Router>
+    <>
+      <Router>
+        <Routes>
+          <Route element={<MainLayout />}>
+            <Route path="/" element={<HomeSection />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/contactUs" element={<CotactUs />} />
+            <Route path="/feature" element={<Feature />} />
+            <Route path="/TermsAndCondition" element={<TermsAndCondition />} />
+            <Route path="/RefundAndPolicy" element={<RefundAndPolicy />} />
+            <Route path="/PrivacyAndPolicy" element={<PrivacyAndPolicy />} />
+          </Route>
+        </Routes>
+      </Router>
+      <ToastContainer />
+    </>
   );
 }
 

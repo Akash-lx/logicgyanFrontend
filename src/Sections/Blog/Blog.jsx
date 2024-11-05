@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import BlogHeroSection from "../../components/HeroSection/BlogHeroSection";
 import BlogContent from "./BlogContent";
 
