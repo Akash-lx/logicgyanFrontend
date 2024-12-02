@@ -15,6 +15,11 @@ import PrivacyAndPolicy from "./Sections/TermsPrivacy/PrivacyAndPolicy";
 import TermsLayout from "./layout/TermsLayout";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import AuthLayout from "./layout/AuthLayout";
+import Login from "./Sections/Authentication/Login";
+import ProtectedRouting from "./Sections/Authentication/ProtectedRouting";
+import Signup from "./Sections/Authentication/Signup";
+import LandingCourseDetails from "./components/CoursesDisplay/LandingCourseDetails";
 
 function App() {
   useEffect(() => {
@@ -36,6 +41,12 @@ function App() {
             <Route path="/TermsAndCondition" element={<TermsAndCondition />} />
             <Route path="/RefundAndPolicy" element={<RefundAndPolicy />} />
             <Route path="/PrivacyAndPolicy" element={<PrivacyAndPolicy />} />
+            <Route path="/CourseDetails" element={<LandingCourseDetails />} />
+          </Route>
+
+          <Route element={<AuthLayout />}>
+            <Route path="/auth/login" element={<Login />} />
+            <Route path="/auth/signup" element={<Signup />} />
           </Route>
         </Routes>
       </Router>

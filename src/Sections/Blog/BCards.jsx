@@ -7,9 +7,9 @@ import { properties } from "../../config/poperties";
 const BCards = ({ blogsData }) => {
   return (
     <>
-      {blogsData?.map((ele) => (
-        <Box px={5}>
-          <Grid container>
+      <Box px={5}>
+        <Grid container rowGap={2}>
+          {blogsData?.map((ele) => (
             <Grid size={8}>
               <Box>
                 <Stack
@@ -38,7 +38,7 @@ const BCards = ({ blogsData }) => {
                         WebkitLineClamp: 3, // Number of lines before truncating
                       }}
                     >
-                      {ele.bcontent}
+                      {ele.bdescription}
                     </Typography>
                     <Button>
                       Read More <ArrowForwardIosIcon />
@@ -61,9 +61,9 @@ const BCards = ({ blogsData }) => {
                 </Stack>
               </Box>
             </Grid>
-          </Grid>
-        </Box>
-      ))}
+          ))}
+        </Grid>
+      </Box>
     </>
   );
 };

@@ -17,7 +17,8 @@ const HeroSection = () => {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
-      py={20}
+      pt={20}
+      pb={5}
       mb={10}
     >
       {/* <img
@@ -126,8 +127,7 @@ const HeroSection = () => {
                   <img src="/icons/playstore.png" />
                 </Box>
                 <Box textAlign="left">
-                  <Typography variant="caption">Get it on </Typography>
-                  <br />
+                  <Typography fontSize="0.6rem">Get it on </Typography>
                   <Typography variant="button" fontWeight={550}>
                     Playstore
                   </Typography>
@@ -161,8 +161,7 @@ const HeroSection = () => {
                   />
                 </Box>
                 <Box textAlign="left">
-                  <Typography variant="caption">Contact us </Typography>
-                  <br />
+                  <Typography fontSize="0.6rem">Contact us </Typography>
                   <Typography variant="button" fontWeight={550}>
                     Call now
                   </Typography>

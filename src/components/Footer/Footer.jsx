@@ -14,6 +14,7 @@ import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import CropLandscapeIcon from "@mui/icons-material/CropLandscape";
+import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -116,24 +117,24 @@ const Footer = () => {
             <ul className="footerList">
               <li className="footerListItem">
                 <Typography variant="body1" className="listItemContent">
-                  <CropLandscapeIcon /> Documentation
+                  <KeyboardDoubleArrowRightIcon /> Documentation
                 </Typography>
               </li>
               <li className="footerListItem">
                 <Typography variant="body1" className="listItemContent">
-                  <CropLandscapeIcon />
+                  <KeyboardDoubleArrowRightIcon />
                   Design
                 </Typography>
               </li>
               <li className="footerListItem">
                 <Typography variant="body1" className="listItemContent">
-                  <CropLandscapeIcon />
+                  <KeyboardDoubleArrowRightIcon />
                   Themes
                 </Typography>
               </li>
               <li className="footerListItem">
                 <Typography variant="body1" className="listItemContent">
-                  <CropLandscapeIcon />
+                  <KeyboardDoubleArrowRightIcon />
                   Illustrations
                 </Typography>
               </li>
@@ -156,25 +157,25 @@ const Footer = () => {
             <ul className="footerList">
               <li className="footerListItem">
                 <Typography variant="body1" className="listItemContent">
-                  <CropLandscapeIcon />
+                  <KeyboardDoubleArrowRightIcon />
                   About
                 </Typography>
               </li>
               <li className="footerListItem">
                 <Typography variant="body1" className="listItemContent">
-                  <CropLandscapeIcon />
+                  <KeyboardDoubleArrowRightIcon />
                   Terms
                 </Typography>
               </li>
               <li className="footerListItem">
                 <Typography variant="body1" className="listItemContent">
-                  <CropLandscapeIcon />
+                  <KeyboardDoubleArrowRightIcon />
                   Privacy Policy
                 </Typography>
               </li>
               <li className="footerListItem">
                 <Typography variant="body1" className="listItemContent">
-                  <CropLandscapeIcon />
+                  <KeyboardDoubleArrowRightIcon />
                   Careers
                 </Typography>
               </li>
@@ -197,19 +198,19 @@ const Footer = () => {
             <ul className="footerList">
               <li className="footerListItem">
                 <Typography variant="body1" className="listItemContent">
-                  <CropLandscapeIcon />
+                  <KeyboardDoubleArrowRightIcon />
                   Select
                 </Typography>
               </li>
               <li className="footerListItem">
                 <Typography variant="body1" className="listItemContent">
-                  <CropLandscapeIcon />
+                  <KeyboardDoubleArrowRightIcon />
                   Service
                 </Typography>
               </li>
               <li className="footerListItem">
                 <Typography variant="body1" className="listItemContent">
-                  <CropLandscapeIcon />
+                  <KeyboardDoubleArrowRightIcon />
                   Payment
                 </Typography>
               </li>

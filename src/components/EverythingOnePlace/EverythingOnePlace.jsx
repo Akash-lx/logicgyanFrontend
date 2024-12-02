@@ -9,7 +9,15 @@ import EastIcon from "@mui/icons-material/East";
 
 const EverythingOnePlace = () => {
   return (
-    <Box className="mainContainer" py={7}>
+    <Box
+      className="mainContainer"
+      py={7}
+      sx={{
+        backgroundColor: "rgb(255,255,255)",
+        background:
+          "linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(201,238,229,1) 100%)",
+      }}
+    >
       <Box className="mainContainer" mb={10}>
         <Grid container spacing={2}>
           <Grid size={{ sm: 12, md: 6 }}>

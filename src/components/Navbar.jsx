@@ -99,7 +99,7 @@ const HeadNavbar = () => {
                     activeMenu === "Home"
                       ? elevate
                         ? colors.secondry.highlited
-                        : colors.primary.main
+                        : colors.secondry.highlited
                       : elevate
                       ? colors.white
                       : colors.primary.main,
@@ -123,7 +123,7 @@ const HeadNavbar = () => {
                     activeMenu === "About"
                       ? elevate
                         ? colors.secondry.highlited
-                        : colors.primary.main
+                        : colors.secondry.highlited
                       : elevate
                       ? colors.white
                       : colors.primary.main,
@@ -147,7 +147,7 @@ const HeadNavbar = () => {
                     activeMenu === "Feature"
                       ? elevate
                         ? colors.secondry.highlited
-                        : colors.primary.main
+                        : colors.secondry.highlited
                       : elevate
                       ? colors.white
                       : colors.primary.main,
@@ -171,7 +171,7 @@ const HeadNavbar = () => {
                     activeMenu === "Blog"
                       ? elevate
                         ? colors.secondry.highlited
-                        : colors.primary.main
+                        : colors.secondry.highlited
                       : elevate
                       ? colors.white
                       : colors.primary.main,
@@ -192,6 +192,21 @@ const HeadNavbar = () => {
           {isScreen ? (
             <Box>
               <PrimaryButton title="Contact Us" btnFunction={handleNavigate} />
+              <Button
+                variant="outlined"
+                sx={{
+                  color: elevate ? colors.secondry.main : colors.primary.dark,
+                  borderColor: elevate
+                    ? colors.secondry.main
+                    : colors.primary.dark,
+                  ml: 1,
+                }}
+                onClick={() => {
+                  navigate("/auth/login");
+                }}
+              >
+                Login
+              </Button>
             </Box>
           ) : null}
         </Toolbar>

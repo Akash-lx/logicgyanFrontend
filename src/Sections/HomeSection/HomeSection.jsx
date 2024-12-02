@@ -7,6 +7,7 @@ import CollaborateSection from "../../components/CollaborateSection/CollaborateS
 import FreeTrailSection from "../../components/FreeTrailSection/FreeTrailSection";
 import EverythingOnePlace from "../../components/EverythingOnePlace/EverythingOnePlace";
 import ImgBanner from "../../components/Banner/ImgBanner";
+import LandingPageCourse from "../../components/CoursesDisplay/LandingPageCourse";
 
 const HomeSection = () => {
   return (
@@ -14,6 +15,7 @@ const HomeSection = () => {
       <HeroSection />
       <Features />
       <EverythingOnePlace />
+      <LandingPageCourse />
       <CollaborateSection />
       <IntricateYourApps />
       <PricingSection />

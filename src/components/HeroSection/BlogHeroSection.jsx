@@ -23,12 +23,12 @@ const BlogHeroSection = () => {
           textAlign="center"
           color={colors.primary.main}
         >
-          Blog
+          Blogs
         </Typography>
         <Typography variant="body1" fontWeight={700} textAlign="center">
           Home{" "}
           <Typography variant="span" color={colors.primary.light}>
-            / Blog
+            / Blogs
           </Typography>
         </Typography>
       </Box>
