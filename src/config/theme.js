@@ -44,7 +44,7 @@ const theme = createTheme({
       },
     },
     h4: {
-      fontSize: "1.25rem",
+      fontSize: "1.3rem",
       lineHeight: 1, // Line-height for h4
       "@media (min-width:600px)": {
         fontSize: "1.75rem",
@@ -57,7 +57,7 @@ const theme = createTheme({
       },
     },
     h5: {
-      fontSize: "1rem",
+      fontSize: "1.2rem",
       lineHeight: 1, // Line-height for h5
       "@media (min-width:600px)": {
         fontSize: "1.5rem",

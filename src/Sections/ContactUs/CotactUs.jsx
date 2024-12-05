@@ -1,12 +1,15 @@
 import { Box, Stack, Typography, Button } from "@mui/material";
 import React, { useState } from "react";
 import ContactUsHero from "../../components/HeroSection/ContactUsHero";
-import Grid from "@mui/material/Grid";
+import Grid from "@mui/material/Grid2";
 import "./index.css";
 import { colors } from "../../config/colorPalette";
 import axios from "axios";
 import { properties } from "../../config/poperties";
 import { toast } from "react-toastify";
+import PlaceIcon from "@mui/icons-material/Place";
+import EmailIcon from "@mui/icons-material/Email";
+import CallIcon from "@mui/icons-material/Call";
 
 const ContactUs = () => {
   // State to store form input values
@@ -50,8 +53,8 @@ const ContactUs = () => {
             Send Us A Message
           </Typography>
         </Box>
-        <Grid container spacing={{ xs: 5, md: 2 }}>
-          <Grid item xs={12} md={7}>
+        <Grid container spacing={{ xs: 5, md: 3 }}>
+          <Grid item size={{ xs: 12, md: 7 }}>
             <Box>
               <form onSubmit={handleSubmit}>
                 <Stack direction="column" className="formContainer">
@@ -108,7 +111,7 @@ const ContactUs = () => {
               </form>
             </Box>
           </Grid>
-          <Grid item xs={12} md={5}>
+          <Grid item size={{ xs: 12, md: 5 }}>
             <Box className="contactInfoContainer" p={3}>
               <Typography variant="h5" fontWeight={700} mb={2}>
                 Contact Information
@@ -118,17 +121,37 @@ const ContactUs = () => {
                 <Typography variant="h6" mb={3}>
                   Contact Info
                 </Typography>
-                <Typography mb={2}>Support@saasland.com</Typography>
-                <Typography mb={2}>+44 (0) 30 546 7865</Typography>
+                <Box display="flex">
+                  <EmailIcon />
+                  <Typography mb={2} ml={1}>
+                    info@logixhunt.com
+                  </Typography>
+                </Box>
+                <Box display="flex">
+                  <CallIcon />
+                  <Typography mb={2} ml={1}>
+                    +91-79998 45114
+                  </Typography>
+                </Box>
+                <Box display="flex">
+                  <CallIcon />
+                  <Typography mb={2} ml={1}>
+                    +91-78791 22060
+                  </Typography>
+                </Box>
               </Box>
               <hr />
               <Box mt={3}>
                 <Typography variant="h6" mb={3}>
                   Office Address
                 </Typography>
-                <Typography>
-                  100 Banbridge Road, London, United Kingdom
-                </Typography>
+                <Box display="flex">
+                  <PlaceIcon />
+                  <Typography ml={1}>
+                    Plot no 9, Pushpak Nagar, Smriti Nagar Main Road, Beside
+                    Dwarika Restaurant, Bhilai ,Chhattisgarh (490023)
+                  </Typography>
+                </Box>
               </Box>
             </Box>
           </Grid>

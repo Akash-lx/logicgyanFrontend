@@ -68,7 +68,7 @@ const Footer = () => {
                 <WhatsAppIcon fontSize="inherit" />
               </IconButton>
             </Box>
-            <Box>
+            {/* <Box>
               <Typography
                 variant="caption"
                 mr={1}
@@ -98,7 +98,7 @@ const Footer = () => {
               >
                 Privacy Policy
               </Typography>
-            </Box>
+            </Box> */}
           </Box>
         </Grid>
         <Grid size={{ xs: 6, md: 2 }} py={2}>
@@ -150,33 +150,57 @@ const Footer = () => {
               borderColor={colors.secondry.dark}
               color={colors.primary.light}
             >
-              Community
+              Resource
             </Typography>
           </Box>
           <Box>
             <ul className="footerList">
               <li className="footerListItem">
-                <Typography variant="body1" className="listItemContent">
+                <Typography
+                  variant="body1"
+                  className="listItemContent"
+                  onClick={() => {
+                    navigate("/about");
+                  }}
+                >
                   <KeyboardDoubleArrowRightIcon />
                   About
                 </Typography>
               </li>
               <li className="footerListItem">
-                <Typography variant="body1" className="listItemContent">
+                <Typography
+                  variant="body1"
+                  className="listItemContent"
+                  onClick={() => {
+                    navigate("/TermsAndCondition");
+                  }}
+                >
                   <KeyboardDoubleArrowRightIcon />
-                  Terms
+                  Terms & Condition
                 </Typography>
               </li>
               <li className="footerListItem">
-                <Typography variant="body1" className="listItemContent">
+                <Typography
+                  variant="body1"
+                  className="listItemContent"
+                  onClick={() => {
+                    navigate("/PrivacyAndPolicy");
+                  }}
+                >
                   <KeyboardDoubleArrowRightIcon />
                   Privacy Policy
                 </Typography>
               </li>
               <li className="footerListItem">
-                <Typography variant="body1" className="listItemContent">
+                <Typography
+                  variant="body1"
+                  className="listItemContent"
+                  onClick={() => {
+                    navigate("/RefundAndPolicy");
+                  }}
+                >
                   <KeyboardDoubleArrowRightIcon />
-                  Careers
+                  Refund Policy
                 </Typography>
               </li>
             </ul>
@@ -236,21 +260,40 @@ const Footer = () => {
                 <Typography color="black" mr={0.5} ml={0.5}>
                   Call :{" "}
                 </Typography>
-                <Typography variant="body1">+91-9715546963</Typography>
+                <Typography variant="body1">+91-79998 45114</Typography>
+              </li>
+              <li className="footerListItem" style={{ display: "flex" }}>
+                <CallIcon sx={{ color: colors.primary.light }} />
+                <Typography color="black" mr={0.5} ml={0.5}>
+                  Call :{" "}
+                </Typography>
+                <Typography variant="body1">+91-78791 22060</Typography>
               </li>
               <li className="footerListItem" style={{ display: "flex" }}>
                 <EmailIcon sx={{ color: colors.primary.light }} />
                 <Typography color="black" mr={0.5} ml={0.5}>
                   Email :{" "}
                 </Typography>
-                <Typography variant="body1">admin@gmail.com</Typography>
+                <Typography variant="body1">info@logixhunt.com</Typography>
               </li>
-              <li className="footerListItem" style={{ display: "flex" }}>
-                <LocationOnIcon sx={{ color: colors.primary.light }} />
-                <Typography color="black" mr={0.5} ml={0.5}>
-                  Address :{" "}
+              <li
+                className="footerListItem"
+                style={{ display: "flex", flexDirection: "column" }}
+              >
+                <Box sx={{ display: "flex", mb: 2 }}>
+                  <LocationOnIcon
+                    sx={{
+                      color: colors.primary.light,
+                    }}
+                  />
+                  <Typography color="black" mr={0.5} ml={0.5}>
+                    Address
+                  </Typography>
+                </Box>
+                <Typography variant="body1">
+                  Plot no 9, Pushpak Nagar, Smriti Nagar Main Road, Beside
+                  Dwarika Restaurant, Bhilai ,Chhattisgarh (490023)
                 </Typography>
-                <Typography variant="body1">Bhilai</Typography>
               </li>
             </ul>
           </Box>

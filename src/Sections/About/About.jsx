@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Features from "../../components/Features/Features";
 import HeroSectionAboutUs from "../../components/HeroSection/HeroSectionAboutUs";
 import LatestWork from "./LatestWork";
@@ -9,6 +9,9 @@ import PictureCarousel from "../../components/PictureCarousel";
 import ImgBanner from "../../components/Banner/ImgBanner";
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <HeroSectionAboutUs />

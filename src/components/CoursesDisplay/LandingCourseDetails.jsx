@@ -1,11 +1,12 @@
 import React from "react";
 import { useEffect } from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import { colors } from "../../config/colorPalette";
 import MenuBookIcon from "@mui/icons-material/MenuBook";
 import GroupsIcon from "@mui/icons-material/Groups";
 import StarsIcon from "@mui/icons-material/Stars";
+import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
 
 const LandingCourseDetails = () => {
   useEffect(() => {
@@ -13,7 +14,7 @@ const LandingCourseDetails = () => {
   }, []);
   return (
     <Box
-      pt={15}
+      pt={20}
       px={{ xs: 3 }}
       sx={{
         backgroundColor: "white",
@@ -23,53 +24,84 @@ const LandingCourseDetails = () => {
       }}
     >
       <Box p={{ xs: 1 }} borderRadius={3} display="flex" flexDirection="column">
-        <Box mr={2} width="100%" mb={3}>
-          <img
-            src="/phImg.jpg"
-            className="courseDetailsImg"
-            style={{
-              objectFit: "cover",
-              borderRadius: 10,
-              width: "100%",
-            }}
-          />
-        </Box>
-        <Box color={colors.primary.light} px={0.5}>
-          <Typography variant="h4" fontWeight={550} mb={1.5}>
-            Master Photoshop CS6 in 2 Months
-          </Typography>
-          <Typography variant="h6" mb={3}>
-            By: Harsh Agarwal
-          </Typography>
-          <Box display="flex" justifyContent="space-between" mb={3}>
-            <Box>
-              <Typography variant="h4" color={colors.secondry.dark}>
-                ₹4,999{" "}
-                <Typography component="span" variant="h6">
-                  <s>₹7,999</s>
-                </Typography>
-              </Typography>
-              <Typography>For 2 months</Typography>
+        <Grid
+          container
+          spacing={5}
+          mb={5}
+          sx={{ flexDirection: { xs: "column", md: "row-reverse" } }}
+        >
+          <Grid size={{ xs: 12, md: 6 }}>
+            <Box mr={2} width="100%">
+              <img
+                src="/phImg.jpg"
+                className="courseDetailsImg"
+                style={{
+                  objectFit: "cover",
+                  borderRadius: 10,
+                  width: "100%",
+                }}
+              />
             </Box>
-            <Box>
-              <Typography
-                variant="body1"
-                mb={1}
+          </Grid>
+          <Grid size={{ xs: 12, md: 6 }}>
+            <Box color={colors.primary.light} px={0.5}>
+              <Typography variant="h4" fontWeight={550} mb={1.5}>
+                Master Photoshop CS6 in 2 Months
+              </Typography>
+              <Typography variant="h6" mb={3}>
+                By: Harsh Agarwal
+              </Typography>
+              <Box
                 display="flex"
-                alignItems="center"
+                justifyContent="space-between"
+                flexDirection={{ xs: "column", md: "row" }}
+                pr={3}
+                mb={3}
               >
-                <>15 modules</> <MenuBookIcon sx={{ ml: 1 }} />
-              </Typography>
-              <Typography variant="body1" display="flex" alignItems="center">
-                <>105 enrollments</> <GroupsIcon sx={{ ml: 1 }} />
-              </Typography>
+                <Box mb={{ xs: 3, sm: 0 }}>
+                  <Typography variant="h4" color={colors.secondry.dark}>
+                    ₹4,999{" "}
+                    <Typography component="span" variant="h6">
+                      <s>₹7,999</s>
+                    </Typography>
+                  </Typography>
+                  <Typography>For 2 months</Typography>
+                </Box>
+                <Box>
+                  <Typography
+                    variant="body1"
+                    mb={1}
+                    display="flex"
+                    alignItems="center"
+                  >
+                    <>15 modules</> <MenuBookIcon sx={{ ml: 1 }} />
+                  </Typography>
+                  <Typography
+                    variant="body1"
+                    display="flex"
+                    alignItems="center"
+                  >
+                    <>105 enrollments</> <GroupsIcon sx={{ ml: 1 }} />
+                  </Typography>
+                </Box>
+              </Box>
+              <Box>
+                <Button
+                  variant="contained"
+                  sx={{ bgcolor: colors.primary.main }}
+                >
+                  <LibraryBooksIcon sx={{ mr: 0.5 }} /> Download brochure
+                </Button>
+              </Box>
             </Box>
-          </Box>
+          </Grid>
+        </Grid>
+        <Box color={colors.primary.light} px={0.5}>
           <Box>
             <Grid container spacing={3}>
               <Grid size={{ xs: 12, md: 7 }}>
                 <Box mb={3}>
-                  <Typography variant="h5" fontWeight={550}>
+                  <Typography variant="h5" mb={2} fontWeight={550}>
                     Course Overview
                   </Typography>
                   <Typography lineHeight={2} variant="body1">

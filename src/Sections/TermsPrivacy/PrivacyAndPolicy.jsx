@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Box from "@mui/material/Box";
 import { Typography, Divider, Container } from "@mui/material";
 import { colors } from "../../config/colorPalette";
 
 const PrivacyAndPolicy = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Box
-      py={10}
+      py={25}
       sx={{
         backgroundColor: "rgb(201,238,229)",
         background:
