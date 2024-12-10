@@ -38,10 +38,10 @@ const FeatureHeroSection = () => {
           <Grid size={{ sm: 12, md: 5 }}>
             <Box py={5} px={5}>
               <Typography variant="h1" fontWeight={600} mb={3}>
-                Explore the Features of LogicGyan
+                Explore the Features of LogicMitra
               </Typography>
               <Typography variant="body1" fontWeight={550} color="#5a7184">
-                At LogicGyan, we offer a range of innovative features tailored
+                At LogicMitra, we offer a range of innovative features tailored
                 to provide you with a seamless and engaging educational journey.
                 From flexible learning options to expert guidance, discover how
                 our platform empowers you to succeed in your learning goals.
@@ -114,13 +114,13 @@ const FeatureHeroSection = () => {
                 right={45}
               >
                 <Typography variant="h6" mb={2} fontWeight={600}>
-                  Jenifar Goz
+                  Pramod Shukla
                 </Typography>
                 <Typography variant="body2" color="#5a7184" mb={2}>
-                  CEO, Xavale
+                  CEO
                 </Typography>
                 <Typography variant="body2" color="#5a7184">
-                  Everyone please read these condition ...
+                  Best features provided for mentors...
                 </Typography>
               </Box>
               <Box p={1}>

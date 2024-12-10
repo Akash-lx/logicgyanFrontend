@@ -16,8 +16,8 @@ const About = () => {
     <>
       <HeroSectionAboutUs />
       <Features />
-      <LatestWork />
-      <Box
+      {/* <LatestWork /> */}
+      {/* <Box
         py={10}
         px={5}
         sx={{
@@ -83,7 +83,7 @@ const About = () => {
         <Box>
           <ClientReviewCarousel />
         </Box>
-      </Box>
+      </Box> */}
       <ImgBanner />
     </>
   );

@@ -19,13 +19,13 @@ import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArro
 const Footer = () => {
   const navigate = useNavigate();
   return (
-    <Box py={7} px={3}>
+    <Box py={7} px={13}>
       <Grid container spacing={3}>
         <Grid size={{ xs: 12, md: 3, lg: 4 }}>
           <Box>
             <Box>
               <img
-                src="/logicgyan4.png"
+                src="/logicmitra4.png"
                 style={{
                   objectFit: "cover",
                   width: "60%",
@@ -40,32 +40,53 @@ const Footer = () => {
               <IconButton
                 size="large"
                 sx={{ "&:hover": { backgroundColor: colors.primary.xxlight } }}
+                onClick={() => {
+                  window.open(
+                    "https://www.linkedin.com/company/logixhunt/about/",
+                    "_blank"
+                  );
+                }}
               >
                 <LinkedInIcon fontSize="inherit" />
               </IconButton>
               <IconButton
                 size="large"
                 sx={{ "&:hover": { backgroundColor: colors.primary.xxlight } }}
+                onClick={() => {
+                  window.open("https://www.instagram.com/logixhunt/", "_blank");
+                }}
               >
                 <InstagramIcon fontSize="inherit" />
               </IconButton>
               <IconButton
                 size="large"
                 sx={{ "&:hover": { backgroundColor: colors.primary.xxlight } }}
+                onClick={() => {
+                  window.open("https://www.facebook.com/logixhunt/", "_blank");
+                }}
               >
                 <FacebookIcon fontSize="inherit" />
               </IconButton>
               <IconButton
                 size="large"
                 sx={{ "&:hover": { backgroundColor: colors.primary.xxlight } }}
+                onClick={() => {
+                  window.open("https://twitter.com/logixhunt", "_blank");
+                }}
               >
                 <XIcon fontSize="inherit" />
               </IconButton>
               <IconButton
                 size="large"
                 sx={{ "&:hover": { backgroundColor: colors.primary.xxlight } }}
+                onClick={() => {
+                  window.open(
+                    "https://api.whatsapp.com/send?phone=918982645114&text=Hi",
+                    "_blank"
+                  );
+                }}
               >
-                <WhatsAppIcon fontSize="inherit" />
+                <WhatsAppIcon fontSize="in\herit" />
               </IconButton>
             </Box>
             {/* <Box>
@@ -116,26 +137,50 @@ const Footer = () => {
           <Box>
             <ul className="footerList">
               <li className="footerListItem">
-                <Typography variant="body1" className="listItemContent">
-                  <KeyboardDoubleArrowRightIcon /> Documentation
+                <Typography
+                  variant="body1"
+                  className="listItemContent"
+                  onClick={() => {
+                    navigate("/feature");
+                  }}
+                >
+                  <KeyboardDoubleArrowRightIcon /> All Features
                 </Typography>
               </li>
               <li className="footerListItem">
-                <Typography variant="body1" className="listItemContent">
+                <Typography
+                  variant="body1"
+                  className="listItemContent"
+                  onClick={() => {
+                    navigate("/");
+                  }}
+                >
                   <KeyboardDoubleArrowRightIcon />
-                  Design
+                  About Our Team
                 </Typography>
               </li>
               <li className="footerListItem">
-                <Typography variant="body1" className="listItemContent">
+                <Typography
+                  variant="body1"
+                  className="listItemContent"
+                  onClick={() => {
+                    navigate("/");
+                  }}
+                >
                   <KeyboardDoubleArrowRightIcon />
-                  Themes
+                  Collaboration
                 </Typography>
               </li>
               <li className="footerListItem">
-                <Typography variant="body1" className="listItemContent">
+                <Typography
+                  variant="body1"
+                  className="listItemContent"
+                  onClick={() => {
+                    navigate("/about");
+                  }}
+                >
                   <KeyboardDoubleArrowRightIcon />
-                  Illustrations
+                  About our Features
                 </Typography>
               </li>
             </ul>
@@ -206,7 +251,7 @@ const Footer = () => {
             </ul>
           </Box>
         </Grid>
-        <Grid size={{ xs: 6, md: 2 }} py={2}>
+        {/* <Grid size={{ xs: 6, md: 2 }} py={2}>
           <Box mb={3} display="flex">
             <Typography
               variant="h6"
@@ -240,8 +285,8 @@ const Footer = () => {
               </li>
             </ul>
           </Box>
-        </Grid>
-        <Grid size={{ xs: 12, sm: 6, md: 3, lg: 2 }} py={2}>
+        </Grid> */}
+        <Grid size={{ xs: 12, sm: 6, md: 3 }} py={2}>
           <Box mb={3} display="flex">
             <Typography
               variant="h6"
@@ -257,23 +302,14 @@ const Footer = () => {
             <ul className="footerList">
               <li className="footerListItem" style={{ display: "flex" }}>
                 <CallIcon sx={{ color: colors.primary.light }} />
-                <Typography color="black" mr={0.5} ml={0.5}>
-                  Call :{" "}
-                </Typography>
                 <Typography variant="body1">+91-79998 45114</Typography>
               </li>
               <li className="footerListItem" style={{ display: "flex" }}>
                 <CallIcon sx={{ color: colors.primary.light }} />
-                <Typography color="black" mr={0.5} ml={0.5}>
-                  Call :{" "}
-                </Typography>
                 <Typography variant="body1">+91-78791 22060</Typography>
               </li>
               <li className="footerListItem" style={{ display: "flex" }}>
                 <EmailIcon sx={{ color: colors.primary.light }} />
-                <Typography color="black" mr={0.5} ml={0.5}>
-                  Email :{" "}
-                </Typography>
                 <Typography variant="body1">info@logixhunt.com</Typography>
               </li>
               <li

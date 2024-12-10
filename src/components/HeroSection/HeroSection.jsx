@@ -6,6 +6,7 @@ import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const HeroSection = () => {
   // const isTab = useMediaQuery("(min-width:786px)");
+
   return (
     <Box
       className="mainContainer"
@@ -49,7 +50,7 @@ const HeroSection = () => {
                 fontWeight={700}
                 color="rgba(3, 99, 75, 0.1)"
               >
-                LogicGyan
+                LogicMitra
               </Typography>
             </Box>
 
@@ -68,7 +69,7 @@ const HeroSection = () => {
               >
                 Unlock Your Potential with{" "}
                 <Typography variant="span" color={colors.secondry.highlited}>
-                  LogicGyan
+                  LogicMitra
                 </Typography>
               </Typography>
               <Typography
@@ -150,6 +151,9 @@ const HeroSection = () => {
                       "linear-gradient(180deg, rgba(6,178,135,1) 30%, rgba(1,52,55,1) 100%)",
                     color: colors.white,
                   },
+                }}
+                onClick={() => {
+                  window.open("tel:+917999845114", "_blank");
                 }}
               >
                 <Box mr={2} mb={1}>

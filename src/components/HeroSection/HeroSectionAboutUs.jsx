@@ -36,7 +36,7 @@ const HeroSectionAboutUs = () => {
         <Grid size={{ sm: 12, md: 5 }}>
           <Box py={{ xs: 2, sm: 5 }} px={5}>
             <Typography variant="h1" fontWeight={600} mb={3}>
-              About LogicGyan: Your Partner in Learning
+              About LogicMitra: Your Partner in Learning
             </Typography>
             <Typography variant="body1" fontWeight={550} color="#5a7184">
               Empowering learners through accessible education and expert
@@ -198,7 +198,7 @@ const HeroSectionAboutUs = () => {
                 Innovative Learning Platform
               </Typography>
               <Typography variant="body1" fontWeight={550} color="#5a7184">
-                LogicGyan combines online recorded lectures with interactive
+                LogicMitra combines online recorded lectures with interactive
                 offline classes, offering a comprehensive and engaging learning
                 experience.
               </Typography>

@@ -28,8 +28,8 @@ const TermsAndCondition = () => {
         <Box sx={{ my: 5 }}>
           <Typography variant="h6">Introduction</Typography>
           <Typography variant="body1">
-            Welcome to LogicGyan! These Terms and Conditions govern your use of
-            our app. By accessing or using LogicGyan, you agree to comply with
+            Welcome to LogicMitra! These Terms and Conditions govern your use of
+            our app. By accessing or using LogicMitra, you agree to comply with
             these terms. If you do not agree with any part of the terms, please
             refrain from using our app.
           </Typography>
@@ -38,10 +38,10 @@ const TermsAndCondition = () => {
         <Box sx={{ my: 5 }}>
           <Typography variant="h6">Services</Typography>
           <Typography variant="body1">
-            LogicGyan offers a variety of online courses, both recorded and live
-            sessions, covering in-demand skills and topics. We strive to provide
-            up-to-date, accurate, and reliable content, although we make no
-            guarantees regarding the suitability, reliability, or accuracy of
+            LogicMitra offers a variety of online courses, both recorded and
+            live sessions, covering in-demand skills and topics. We strive to
+            provide up-to-date, accurate, and reliable content, although we make
+            no guarantees regarding the suitability, reliability, or accuracy of
             the courses.
           </Typography>
         </Box>
@@ -59,8 +59,8 @@ const TermsAndCondition = () => {
         <Box sx={{ my: 5 }}>
           <Typography variant="h6">Usage of Content</Typography>
           <Typography variant="body1">
-            All content on LogicGyan, including videos, materials, and lectures,
-            is owned or licensed by us. You are granted a limited,
+            All content on LogicMitra, including videos, materials, and
+            lectures, is owned or licensed by us. You are granted a limited,
             non-exclusive, and non-transferable license to use this content
             solely for personal, non-commercial educational purposes.
             Unauthorized distribution, copying, or commercial use is strictly
@@ -71,7 +71,7 @@ const TermsAndCondition = () => {
         <Box sx={{ my: 5 }}>
           <Typography variant="h6">Payments and Refunds</Typography>
           <Typography variant="body1">
-            Certain courses and services on LogicGyan may require payment. All
+            Certain courses and services on LogicMitra may require payment. All
             fees are clearly outlined before purchase. Refunds are subject to
             our refund policy, which may vary depending on course type and
             specific terms.
@@ -81,8 +81,8 @@ const TermsAndCondition = () => {
         <Box sx={{ my: 5 }}>
           <Typography variant="h6">Intellectual Property</Typography>
           <Typography variant="body1">
-            All content, branding, and logos related to LogicGyan are the
-            intellectual property of LogicGyan and its licensors. Unauthorized
+            All content, branding, and logos related to LogicMitra are the
+            intellectual property of LogicMitra and its licensors. Unauthorized
             use of these materials is prohibited without prior written consent.
           </Typography>
         </Box>
@@ -90,17 +90,17 @@ const TermsAndCondition = () => {
         <Box sx={{ my: 5 }}>
           <Typography variant="h6">Third-Party Links</Typography>
           <Typography variant="body1">
-            LogicGyan may contain links to third-party websites or services that
-            are not owned or controlled by us. We are not responsible for the
-            content, privacy policies, or practices of any third-party websites
-            or services.
+            LogicMitra may contain links to third-party websites or services
+            that are not owned or controlled by us. We are not responsible for
+            the content, privacy policies, or practices of any third-party
+            websites or services.
           </Typography>
         </Box>
 
         <Box sx={{ my: 5 }}>
           <Typography variant="h6">Limitations of Liability</Typography>
           <Typography variant="body1">
-            LogicGyan, its affiliates, and its employees are not liable for any
+            LogicMitra, its affiliates, and its employees are not liable for any
             indirect, incidental, or consequential damages arising from the use
             or inability to use the services offered.
           </Typography>
@@ -120,7 +120,7 @@ const TermsAndCondition = () => {
           <Typography variant="h6">Contact Us</Typography>
           <Typography variant="body1">
             If you have any questions or concerns regarding these Terms and
-            Conditions, please contact us at [your contact information].
+            Conditions, please contact us at info@logixhunt.com.
           </Typography>
         </Box>
       </Container>

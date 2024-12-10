@@ -15,10 +15,10 @@ const HomeSection = () => {
       <HeroSection />
       <Features />
       <EverythingOnePlace />
-      <LandingPageCourse />
+      {/* <LandingPageCourse /> */}
       <CollaborateSection />
-      <IntricateYourApps />
-      <PricingSection />
+      {/* <IntricateYourApps />
+      <PricingSection /> */}
       <ImgBanner />
     </>
   );

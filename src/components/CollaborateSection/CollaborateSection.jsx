@@ -18,10 +18,10 @@ const CollaborateSection = () => {
               mb={3}
               color={colors.primary.main}
             >
-              Collaborate with your team anytime, anywhere.
+              Collaborate with our team anytime, anywhere.
             </Typography>
             <Typography variant="body1" fontWeight={550} color="#5a7184">
-              At LogicGyan, our team of qualified educators is dedicated to
+              At LogicMitra, our team of qualified educators is dedicated to
               providing an exceptional learning experience. Through interactive
               teaching methods and real-world applications, instructors engage
               students and foster a collaborative environment. With personalized
@@ -174,13 +174,13 @@ const CollaborateSection = () => {
               left={70}
             >
               <Typography variant="h6" mb={2} fontWeight={600}>
-                Jenifar Goz
+                Pramod Shukla
               </Typography>
               <Typography variant="body2" color="#5a7184" mb={2}>
-                CEO, Xavale
+                CEO
               </Typography>
               <Typography variant="body2" color="#5a7184">
-                Everyone please read these condition ...
+                Collaborate with our team make impossible to possible...
               </Typography>
             </Box>
             <Box p={2}>

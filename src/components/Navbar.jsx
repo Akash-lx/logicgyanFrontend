@@ -68,7 +68,12 @@ const HeadNavbar = () => {
                   transition: "background-color 0.75s ease",
                 }}
               >
-                <img src="/logicgyan.png" alt="Logo" width="175" height="50" />
+                <img
+                  src="/logicmitra1.png"
+                  alt="Logo"
+                  width="175"
+                  height="50"
+                />
               </Box>
             ) : (
               <Box
@@ -79,7 +84,12 @@ const HeadNavbar = () => {
                   transition: "background-color 0.75s ease",
                 }}
               >
-                <img src="/logicgyan6.png" alt="Logo" width="175" height="50" />
+                <img
+                  src="/logicmitra4.png"
+                  alt="Logo"
+                  width="175"
+                  height="35"
+                />
               </Box>
             )}
             {isMobile ? (
@@ -163,7 +173,7 @@ const HeadNavbar = () => {
               >
                 Features
               </Typography>
-              <Typography
+              {/* <Typography
                 className={activeMenu === "Blog" ? "" : "menuItem"}
                 fontWeight={550}
                 sx={{
@@ -186,13 +196,13 @@ const HeadNavbar = () => {
                 }}
               >
                 Blogs
-              </Typography>
+              </Typography> */}
             </Box>
           ) : null}
           {isScreen ? (
             <Box>
               <PrimaryButton title="Contact Us" btnFunction={handleNavigate} />
-              <Button
+              {/* <Button
                 variant="outlined"
                 sx={{
                   color: elevate ? colors.secondry.main : colors.primary.dark,
@@ -206,7 +216,7 @@ const HeadNavbar = () => {
                 }}
               >
                 Login
-              </Button>
+              </Button> */}
             </Box>
           ) : null}
         </Toolbar>

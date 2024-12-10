@@ -6,7 +6,7 @@ const ImgBanner = () => {
     <Box>
       <Box>
         <img
-          src="/logicgyan498.jpg"
+          src="/logicgyan498.jpeg"
           style={{ objectFit: "cover", width: "100%" }}
         ></img>
       </Box>

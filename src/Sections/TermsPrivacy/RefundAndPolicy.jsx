@@ -21,7 +21,7 @@ const RefundAndPolicy = () => {
           Refund And Policy
         </Typography>
       </Box>
-      <Container maxWidth="md" sx={{ py: 4 }}>
+      <Container sx={{ py: 4 }}>
         <Divider sx={{ my: 2 }} />
 
         <Box sx={{ my: 5 }}>
@@ -36,9 +36,9 @@ const RefundAndPolicy = () => {
         <Box sx={{ my: 5 }}>
           <Typography variant="h6">Refund Request Process</Typography>
           <Typography variant="body1">
-            To request a refund, please contact us within [specified time frame]
-            of your purchase. Provide your order details and a brief reason for
-            the refund request.
+            To request a refund, please contact us within 10 days of your
+            purchase. Provide your order details and a brief reason for the
+            refund request.
           </Typography>
         </Box>
 
@@ -63,9 +63,8 @@ const RefundAndPolicy = () => {
         <Box sx={{ my: 5 }}>
           <Typography variant="h6">Refund Processing</Typography>
           <Typography variant="body1">
-            Approved refunds will be processed within [specified time, e.g.,
-            7-10 business days] and credited back to your original payment
-            method.
+            Approved refunds will be processed within 7-10 business days and
+            credited back to your original payment method.
           </Typography>
         </Box>
 
@@ -73,7 +72,7 @@ const RefundAndPolicy = () => {
           <Typography variant="h6">Contact Us</Typography>
           <Typography variant="body1">
             For questions or concerns regarding refunds, please reach out at
-            [your contact information].
+            info@logixhunt.com.
           </Typography>
         </Box>
       </Container>

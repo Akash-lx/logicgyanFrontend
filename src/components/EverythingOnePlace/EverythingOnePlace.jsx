@@ -63,13 +63,13 @@ const EverythingOnePlace = () => {
                   left={70}
                 >
                   <Typography variant="h6" mb={2} fontWeight={600}>
-                    Jenifar Goz
+                    Pramod Shukla
                   </Typography>
                   <Typography variant="body2" color="#5a7184" mb={2}>
-                    CEO, Xavale
+                    CEO
                   </Typography>
                   <Typography variant="body2" color="#5a7184">
-                    Everyone please read these condition ...
+                    LogicMitra is best platform for mentors
                   </Typography>
                 </Box>
                 <Box>

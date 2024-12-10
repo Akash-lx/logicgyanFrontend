@@ -29,7 +29,7 @@ const FreeTrailSection = () => {
               color={colors.primary.xlight}
               mb={1}
             >
-              🎉 Get LogicGyan on the Play Store! 🎉
+              🎉 Get LogicMitra on the Play Store! 🎉
             </Typography>
             <Typography variant="body1" color={colors.primary.xlight} mb={3}>
               Unlock your learning potential today!
@@ -55,7 +55,7 @@ const FreeTrailSection = () => {
             sx={{ cursor: "pointer" }}
           >
             <InsertLinkIcon sx={{ fontSize: "4rem" }} />
-            Download Logicgyan
+            Download LogicMitra
             <InsertLinkIcon sx={{ fontSize: "4rem" }} />
           </Typography>
         </Box>

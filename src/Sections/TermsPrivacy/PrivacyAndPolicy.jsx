@@ -21,14 +21,14 @@ const PrivacyAndPolicy = () => {
           Privacy and policy
         </Typography>
       </Box>
-      <Container maxWidth="md" sx={{ py: 4 }}>
+      <Container sx={{ py: 4 }}>
         <Divider sx={{ my: 2 }} />
 
         <Box sx={{ my: 5 }}>
           <Typography variant="h6">Introduction</Typography>
           <Typography variant="body1">
-            At LogicGyan, we value your privacy. This Privacy Policy outlines
-            the information we collect, how we use it, and your rights regarding
+            At LogicMitra value your privacy. This Privacy Policy outlines the
+            information we collect, how we use it, and your rights regarding
             your personal data.
           </Typography>
         </Box>
@@ -82,8 +82,8 @@ const PrivacyAndPolicy = () => {
           <Typography variant="h6">Changes to This Policy</Typography>
           <Typography variant="body1">
             We may update our Privacy Policy periodically. Any changes will be
-            posted on this page, and your continued use of LogicGyan constitutes
-            acceptance of the updated terms.
+            posted on this page, and your continued use of LogicMitra
+            constitutes acceptance of the updated terms.
           </Typography>
         </Box>
 
@@ -91,7 +91,7 @@ const PrivacyAndPolicy = () => {
           <Typography variant="h6">Contact Us</Typography>
           <Typography variant="body1">
             If you have questions or concerns regarding our Privacy Policy,
-            please contact us at [your contact information].
+            please contact us at info@logixhunt.com.
           </Typography>
         </Box>
       </Container>
